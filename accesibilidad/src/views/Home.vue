@@ -69,17 +69,17 @@
     <v-layout row wrap align-center>
       <v-flex xs12 sm6 md4>
         <v-card color="grey darken-4" dark>
-          <v-card-title primary class="align-center">Desarrollo</v-card-title>
-          <v-card-text>{{ foro }}</v-card-text>
+          <v-card-title primary class="align-center">KERNELS</v-card-title>
+          <v-card-text>{{ kernels }}</v-card-text>
           <center>
-            <v-img height="200" width="300" src="../assets/security-265130_640.jpg"></v-img>
+            <v-img height="200" width="200" src="../assets/terminal-green-icon.png"></v-img>
           </center>
         </v-card>
       </v-flex>
       <v-flex xs12 sm6 md4 child-flex>
         <v-card color="grey darken-4" dark>
           <v-card-title primary class="align-center">FAQ</v-card-title>
-          <v-card-text>{{ carpetaPersonal }}</v-card-text>
+          <v-card-text>{{ faq }}</v-card-text>
           <center>
             <v-img height="200" width="300" src="../assets/faq-2639673_640.png"></v-img>
           </center>
@@ -87,10 +87,10 @@
       </v-flex>
       <v-flex xs12 sm6 md4>
         <v-card color="grey darken-4" dark>
-          <v-card-title primary class="align-center">Ayuda</v-card-title>
-          <v-card-text>{{ mensajes }}</v-card-text>
+          <v-card-title primary class="align-center">MÁQUINAS VIRTUALES</v-card-title>
+          <v-card-text>{{ maqvir }}</v-card-text>
           <center>
-            <v-img height="200" width="300" src="../assets/question-mark-1750942_640.png"></v-img>
+            <v-img height="200" width="200" src="../assets/VB.png"></v-img>
           </center>
         </v-card>
       </v-flex>
@@ -99,7 +99,7 @@
     <v-layout row wrap align-center>
       <v-flex xs12 sm6 md4>
         <v-card color="#6ADD17" dark>
-          <v-btn @click="clickDesarrollo" block large color="#6ADD17">Acceso al desarrollo</v-btn>
+          <v-btn @click="clickDesarrollo" block large color="#6ADD17">Acceso al KERNELS</v-btn>
         </v-card>
       </v-flex>
       <v-flex xs12 sm6 md4>
@@ -109,7 +109,7 @@
       </v-flex>
       <v-flex xs12 sm6 md4>
         <v-card color="#6ADD17" dark>
-          <v-btn @click="clickAyuda" block large color="#6ADD17">Acceso a la ayuda</v-btn>
+          <v-btn @click="clickAyuda" block large color="#6ADD17">Acceso a las MÁQUINAS VIRTUALES</v-btn>
         </v-card>
       </v-flex>
     </v-layout>
@@ -121,32 +121,6 @@
         </v-card>
       </v-flex>
     </v-layout>
-    <br />
-
-    <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
-      <v-timeline-item
-        v-for="(item, i) in items"
-        :key="i"
-        :color="item.color"
-        :icon="item.icon"
-        fill-dot
-      >
-        <v-card :color="item.color" dark>
-          <v-card-title class="title">
-            <span v-text="item.titulo"></span>
-          </v-card-title>
-          <v-card-text class="white text--primary">
-            <p>
-              <br />
-              <span v-text="item.texto"></span>
-            </p>
-            <v-btn :color="item.color" class="mx-0" outlined>
-              <span v-text="item.titulo"></span>
-            </v-btn>
-          </v-card-text>
-        </v-card>
-      </v-timeline-item>
-    </v-timeline>
     <br />
    
     <br />
@@ -246,9 +220,9 @@ export default {
     privacidad:
       "No se difundirán en ningún caso los datos que obtengamos de su conexión. ",
     lenguajes: `En nuestros foros, los lenguajes de programación que te vas a encontrar son estos:`,
-    foro: `En esta zona de la página web ofreceremos consejos útiles a la hora de aprender sobre ciberseguirdad`,
-    carpetaPersonal: `En este zona puedes publicar cualquier cosa que tenga que ver con el mundo de la ciebrseguridad`,
-    mensajes: `En esta sección puedes acceder a la zona en la que puedes resolver los problemas que te pueden surgir`,
+    kernels: `En la zona de kernels se pueden acceder a diversas actividades relacionadas con el mundo del hacking.`,
+    faq: `En este zona puedes publicar cualquier cosa que tenga que ver con el mundo de la ciebrseguridad.`,
+    maqvir: `En esta sección puedes acceder a las máquinas virtuales vulnerables disponibles.`,
     explicacionNiveles: `Una de las principales características de esta págian web es que sus contenidos están separados por niveles, por lo que siempre podrás encontrar información interesante sepas lo que sepas`,
     items: [
       {
