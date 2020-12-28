@@ -85,19 +85,74 @@
         <v-expansion-panel-header
           dark
           class="blue-grey darken-4"
-        >¿Qué es la zona de desarrolladores?</v-expansion-panel-header>
+        >¿Se puede acceder a todos los contenidos de la aplicación sin loguearse?</v-expansion-panel-header>
         <v-expansion-panel-content
           dark
           class="blue-grey darken-4"
-        >La zona de desarrolladores es el apartado de la página web en la que las personas encargadas de este sitio publicarán sus artículos, adaptados a cada uno de los niveles de dificultad.</v-expansion-panel-content>
+        >No, para acceder a algunos contenidos determinados es necesario tener un perfil en nuestra página web.</v-expansion-panel-content>
+      </v-expansion-panel>
+
+      
+      <v-expansion-panel dark class="blue-grey darken-4">
+        <v-expansion-panel-header
+          dark
+          class="blue-grey darken-4"
+        >¿Qué tipos de productos se pueden comprar en Merchandaising?</v-expansion-panel-header>
+        <v-expansion-panel-content
+          dark
+          class="blue-grey darken-4"
+        >Hay una gran variedad de productos, desde alfombrillas hasta ratones, pasando por camisetas.</v-expansion-panel-content>
+      </v-expansion-panel>
+
+
+      <v-expansion-panel dark class="blue-grey darken-4">
+        <v-expansion-panel-header dark class="blue-grey darken-4">¿Para qué sirve la zona de Máquinas Virtuales?</v-expansion-panel-header>
+        <v-expansion-panel-content
+          dark
+          class="blue-grey darken-4"
+        >En esta zona te puedes encontrar Máquinas Virtuales que tienen vulnerabilidades en las que el objetivo del usuario es descubrir cómo se van a "romper"</v-expansion-panel-content>
+      </v-expansion-panel>
+
+
+      <v-expansion-panel dark class="blue-grey darken-4">
+        <v-expansion-panel-header
+          dark
+          class="blue-grey darken-4"
+        >¿Qué es la zona de Kernels?</v-expansion-panel-header>
+        <v-expansion-panel-content
+          dark
+          class="blue-grey darken-4"
+        >Son las actividades de hacking que se pueden realizar en nuestra página web.</v-expansion-panel-content>
       </v-expansion-panel>
 
       <v-expansion-panel dark class="blue-grey darken-4">
-        <v-expansion-panel-header dark class="blue-grey darken-4">¿Qué son los niveles de usuario?</v-expansion-panel-header>
+        <v-expansion-panel-header dark class="blue-grey darken-4">¿Tengo que acceder a la zona de Máquinas Virtuales para hacer los "kernels"?</v-expansion-panel-header>
         <v-expansion-panel-content
           dark
           class="blue-grey darken-4"
-        >El nivel de usuario es la cantidad de conocimientos acerca de ciberseguridad que un usuario piensa que tiene de sí mismo, y los hilos que publique en el foro serán colocados en función de este nivel para que usuarios con conocimientos similares los tengan a mano.</v-expansion-panel-content>
+        >No, la máquina virtual que sea necesaria dentro de los kernels elegirá la máquina virtual de forma automática</v-expansion-panel-content>
+      </v-expansion-panel>
+
+        <v-expansion-panel dark class="blue-grey darken-4">
+        <v-expansion-panel-header
+          dark
+          class="blue-grey darken-4"
+        >¿Es seguro utilizar la zona de Máquinas Virtuales?</v-expansion-panel-header>
+        <v-expansion-panel-content
+          dark
+          class="blue-grey darken-4"
+        >Sí, es completamente seguro ya que se accederá a cada una de las máquinas mediante una VPN, así que los datos permanecerán ocultos.</v-expansion-panel-content>
+      </v-expansion-panel>
+
+      <v-expansion-panel dark class="blue-grey darken-4">
+        <v-expansion-panel-header
+          dark
+          class="blue-grey darken-4"
+        >¿De qué formas se pueden ordenar los hilos?</v-expansion-panel-header>
+        <v-expansion-panel-content
+          dark
+          class="blue-grey darken-4"
+        >Por recientes, por ID, aleatoriamente y alfabéticamente.</v-expansion-panel-content>
       </v-expansion-panel>
 
       <v-expansion-panel dark class="blue-grey darken-4">
@@ -115,7 +170,29 @@
         <v-expansion-panel-header
           dark
           class="blue-grey darken-4"
-        >¿Puedo elminar un hilo una vez publicado?</v-expansion-panel-header>
+        >¿Cómo puedo editar el perfil?</v-expansion-panel-header>
+        <v-expansion-panel-content
+          dark
+          class="blue-grey darken-4"
+        >En la sección de perfil, se puede encontrar un botón llamado "Editar Perfil" en el que se puede pulsar para conseguir tal funcionalidad.</v-expansion-panel-content>
+      </v-expansion-panel>
+
+            <v-expansion-panel dark class="blue-grey darken-4">
+        <v-expansion-panel-header
+          dark
+          class="blue-grey darken-4"
+        >¿Se pueden descargar las máquinas virtuales?</v-expansion-panel-header>
+        <v-expansion-panel-content
+          dark
+          class="blue-grey darken-4"
+        >Sí, la opción de realizar la descarga de máquinas virtuales está permitida para que los usuarios las puedan usar localmente en sus ordenadores.</v-expansion-panel-content>
+      </v-expansion-panel>
+
+      <v-expansion-panel dark class="blue-grey darken-4">
+        <v-expansion-panel-header
+          dark
+          class="blue-grey darken-4"
+        >¿Puedo eliminar un hilo una vez publicado?</v-expansion-panel-header>
         <v-expansion-panel-content
           dark
           class="blue-grey darken-4"
