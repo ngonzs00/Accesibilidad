@@ -41,7 +41,7 @@
         class="mt-12"
         color="#1F2326"
         width="100000"
-        height="500"
+        height="700"
         >  
         <v-col>
           <v-row class="mr-10" justify="center">
@@ -74,9 +74,29 @@
             v-model="nombreUsuario"
             name="login"
             prepend-icon=""
-            disabled
+            
             type="text"
           ></v-text-field>
+
+          <v-row justify="center">
+            <v-card
+              class="mt-12"
+              color="#292E33"
+              width="500"
+              height="500"
+              elevation=6
+            >
+            </v-card>
+
+            <v-card
+              class="mt-12"
+              color="#292E33"
+              width="500"
+              height="500"
+              elevation=6
+            >
+            </v-card>
+          </v-row>
 
         </v-col>
             
