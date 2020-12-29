@@ -52,8 +52,8 @@
           <center>
             <v-img
               height="200"
-              width="300"
-              src="../assets/faq-2639673_640.png"
+              width="200"
+              src="../assets/kisspng-computer-icons-question-mark-bottom-slowly-rising-bubbles-5ae7043d041543.3058040115250893410167.png"
             ></v-img>
           </center>
         </v-card>
