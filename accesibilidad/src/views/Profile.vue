@@ -111,9 +111,19 @@
       <!---->
       <h1 class="mr-11"></h1>
       <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
       <!---->
 
-      <v-flex xs3 sm3 md4 child-flex>
+      <v-layout >
         <v-card width="400" class="xs-right mr-10 success" dark>
           <v-list-item three-line>
             <v-list-item-content>
@@ -134,77 +144,46 @@
           </v-list-item>
           <!--Botones de la tarjeta de usuario.-->
           <v-card-actions>
-            <!--cuando tocamos en enviar solicitud se aumenta el contador de mensajes.-->
-
-            <v-btn class="mx-1" color="#8AC53E">Editar Perfil</v-btn>
-            <v-row class="mt-4"></v-row>
-
-            <v-badge :content="messages" :value="messages" color="red" overlap>
-              <v-icon large>mdi-message-text-outline</v-icon>
-            </v-badge>
+            <!--<v-btn class="mx-1 black--text" color="#8AC53E">Editar Perfil</v-btn>-->
           </v-card-actions>
         </v-card>
-      </v-flex>
-      <v-card
-        dark
-        :style="{
-          border: '1px solid',
-          borderColor: '#8AC53E',
-        }"
-      ></v-card>
-
-      <v-flex xs2 sm2 md3 child-flex>
-        <v-card
-          height="215"
-          width="500"
-          class="xs-right mr-10 success"
-          flat
-          dark
-        >
-          <v-list-item class="mb-10">
-            <v-list-item-subtitle>
-              <div class="mb-4" color="white">
-                <p></p>
-                <p></p>
-                <h2>APTITUDES</h2>
-              </div>
-              <div class="overline mb-4">
-                <p></p>
-                <p></p>
-                <p>*Profesional en Git</p>
-                <p>*Desarrollador de Declivia</p>
-                <p>*Licenciado en Astrofísica</p>
-              </div>
-            </v-list-item-subtitle>
-          </v-list-item>
-        </v-card>
-      </v-flex>
-      <v-card
-        dark
-        :style="{
-          border: '1px solid',
-          borderColor: '#8AC53E',
-        }"
-      ></v-card>
-
+      </v-layout>
       <!---->
       <h1 class="mr-11"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <!---->
+      <!---->
+      <h1 class="mr-11"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
+      <h1 class="mr-10"></h1>
       <!---->
 
-      <v-flex xs2 sm2 md1 child-flex>
-        <v-btn depressed large color="grey" @click="metodoForo">Ir al Foro</v-btn>
-        <v-row class="mt-4"></v-row>
-        <v-btn depressed large color="grey" @click="messages++">Mensajes</v-btn>
-        <v-row class="mt-4"></v-row>
-        <v-btn depressed large color="grey" @click="goTo('merch')">Merchandising</v-btn>
-      </v-flex>
+      <v-layout class="mt-10">
+        <v-btn class="mx-1 black--text" color="#8AC53E">Editar Perfil</v-btn>
+        <v-btn class="mx-1 black--text" color="#8AC53E">Mensajes Directos</v-btn>
 
-      <!---->
-      <h1 class="mr-11"></h1>
-      <h1 class="mr-11"></h1>
-      <h1 class="mr-11"></h1>
-      <h1 class="mr-11"></h1>
-      <!---->
+      </v-layout>
+      
+
+
 
       <!--Pantalla de configuración-->
       <v-dialog v-model="dialog" persistent max-width="600px" dark>
@@ -273,6 +252,7 @@
         background-color="#8AC53E"
         color="#8AC53E"
         value="10"
+        class="mt-10"
         md3
       ></v-progress-linear>
       <!---->
@@ -414,8 +394,7 @@
       <h1 class="mr-11"></h1>
       <h1 class="mr-10"></h1>
       <v-flex xs5 sm5 md3 child-flex>
-        <v-card flat width="520" outlined height="300" dark>
-          <v-card color="#191C1F" width="520" outlined height="567">
+        <v-card flat width="520" outlined height="570" dark>
             <v-card-title primary class="align-center"
               >Grupos a los que perteneces:</v-card-title
             >
@@ -542,7 +521,7 @@
                 </v-list-item>
               </v-list>
             </v-card>
-          </v-card>
+          
         </v-card>
       </v-flex>
     </v-layout>
