@@ -22,7 +22,6 @@
             <v-icon>mdi-settings</v-icon>
           </v-btn>
         </v-toolbar-title>
-        
       </v-app-bar>
     </v-layout>
     <!------------------------------------------------------------------------------>
@@ -107,33 +106,28 @@
     <!------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------>
 
-    <v-layout row wrap>
-      <!---->
-      <h1 class="mr-11"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <!---->
-
-      <v-layout >
-        <v-card width="400" class="xs-right mr-10 success" dark>
+    <v-layout>
+      <v-col cols="4"></v-col>
+      <v-col cols="6">
+        <v-card
+          width="400"
+          class="xs-right mr-10 success"
+          dark
+          elevation="3"
+          tile
+        >
           <v-list-item three-line>
             <v-list-item-content>
               <div class="overline mb-4">USUARIO</div>
-              <v-list-item-title class="headline mb-1"
+              <v-list-item-title class="headline mb-1 ml-14"
                 >Chotachu</v-list-item-title
               >
-              <v-list-item-subtitle>@chota_chuan</v-list-item-subtitle>
               <v-list-item-subtitle
-                >En este canal tratara de bicicletas y descenso, asi como de bicicletas y descenso</v-list-item-subtitle
+                ><h4 class="green--text">@chota_chuan</h4></v-list-item-subtitle
+              >
+              <v-list-item-subtitle
+                >En este canal tratara de bicicletas y descenso, asi como de
+                bicicletas y descenso</v-list-item-subtitle
               >
             </v-list-item-content>
             <v-list-item-avatar width="70" height="130">
@@ -147,130 +141,99 @@
             <!--<v-btn class="mx-1 black--text" color="#8AC53E">Editar Perfil</v-btn>-->
           </v-card-actions>
         </v-card>
-      </v-layout>
-      <!---->
-      <h1 class="mr-11"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <!---->
-      <!---->
-      <h1 class="mr-11"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <h1 class="mr-10"></h1>
-      <!---->
+      </v-col>
 
-      <v-layout class="mt-10">
-        <v-btn class="mx-1 black--text" color="#8AC53E">Editar Perfil</v-btn>
-        <v-btn class="mx-1 black--text" color="#8AC53E">Mensajes Directos</v-btn>
-
-      </v-layout>
-      
-
-
-
-      <!--Pantalla de configuración-->
-      <v-dialog v-model="dialog" persistent max-width="600px" dark>
-        <v-card>
-          <v-card-title>
-            <span class="headline">User Profile</span>
-          </v-card-title>
-          <v-card-text>
-            <v-container>
-              <v-row>
-                <v-col cols="12" sm="6" md="4">
-                  <v-text-field
-                    label="Cambiar @nickname"
-                    required
-                  ></v-text-field>
-                </v-col>
-                <v-col cols="12" sm="6" md="4">
-                  <v-text-field
-                    type="password"
-                    label="Cambiar contraseña"
-                  ></v-text-field>
-                </v-col>
-
-                <v-col cols="12" sm="6">
-                  <v-btn dark color="#8AC53E">Log Out</v-btn>
-                </v-col>
-                <v-col cols="12" sm="6">
-                  <v-autocomplete
-                    :items="[
-                      'Skiing',
-                      'Ice hockey',
-                      'Soccer',
-                      'Basketball',
-                      'Hockey',
-                      'Reading',
-                      'Writing',
-                      'Coding',
-                      'Basejump',
-                    ]"
-                    label="Interests"
-                    multiple
-                  ></v-autocomplete>
-                </v-col>
-              </v-row>
-            </v-container>
-            <small
-              >Copyright © 2020 DECLIVIA A.A.E LTD All rights reserved.</small
-            >
-          </v-card-text>
-          <v-card-actions>
-            <v-spacer></v-spacer>
-            <v-btn color="#8AC53E" text @click="dialog = false">Close</v-btn>
-            <v-btn color="#8AC53E" text @click="dialog = false">Save</v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-dialog>
-
-      <!---->
-      <p class="mr-10"></p>
-      <p class="mr-10"></p>
-      <p class="mr-10"></p>
-      <!---->
-
-      <!--Línea de separación verde-->
-      <v-progress-linear
-        background-color="#8AC53E"
-        color="#8AC53E"
-        value="10"
-        class="mt-10"
-        md3
-      ></v-progress-linear>
-      <!---->
-      <p class="mr-10"></p>
-      <!---->
+      <v-col cols="3"></v-col>
     </v-layout>
 
-    <!---->
-    <p class="mr-10"></p>
-    <p class="mr-10"></p>
-    <p class="mr-10"></p>
-    <!---->
+    <v-layout class="mt-10">
+      <v-col cols="4"></v-col>
+      <v-col class="ml-5" cols="6">
+        <v-btn class="mx-1 black--text" color="#8AC53E" tile
+          >Editar Perfil</v-btn
+        >
+        <v-btn class="mx-1 black--text" color="#8AC53E" tile
+          >Mensajes Directos</v-btn
+        >
+      </v-col>
+      <v-col cols="3"></v-col>
+    </v-layout>
+
+    <!--Pantalla de configuración-->
+    <v-dialog v-model="dialog" persistent max-width="600px" dark>
+      <v-card>
+        <v-card-title>
+          <span class="headline">User Profile</span>
+        </v-card-title>
+        <v-card-text>
+          <v-container>
+            <v-row>
+              <v-col cols="12" sm="6" md="4">
+                <v-text-field label="Cambiar @nickname" required></v-text-field>
+              </v-col>
+              <v-col cols="12" sm="6" md="4">
+                <v-text-field
+                  type="password"
+                  label="Cambiar contraseña"
+                ></v-text-field>
+              </v-col>
+
+              <v-col cols="12" sm="6">
+                <v-btn dark color="#8AC53E">Log Out</v-btn>
+              </v-col>
+              <v-col cols="12" sm="6">
+                <v-autocomplete
+                  :items="[
+                    'Skiing',
+                    'Ice hockey',
+                    'Soccer',
+                    'Basketball',
+                    'Hockey',
+                    'Reading',
+                    'Writing',
+                    'Coding',
+                    'Basejump',
+                  ]"
+                  label="Interests"
+                  multiple
+                ></v-autocomplete>
+              </v-col>
+            </v-row>
+          </v-container>
+          <small
+            >Copyright © 2020 DECLIVIA A.A.E LTD All rights reserved.</small
+          >
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="#8AC53E" text @click="dialog = false">Close</v-btn>
+          <v-btn color="#8AC53E" text @click="dialog = false">Save</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
+    <!--Línea de separación verde-->
+    <v-progress-linear
+      background-color="#8AC53E"
+      color="#8AC53E"
+      value="10"
+      class="mt-10"
+      md3
+    ></v-progress-linear>
+
+    <br />
+    <br />
+    <br />
 
     <!--Zona de los hilos del brawler-->
     <v-layout>
       <h1 class="mr-11"></h1>
       <h1 class="mr-10"></h1>
       <v-flex xs7 sm7 md7 child-flex>
+        
+        <h2 class="green--text" align="center">Hilos Principales</h2>
+        <br/>
+
         <v-window
           v-model="window"
           class="elevation-1"
@@ -394,134 +357,133 @@
       <h1 class="mr-11"></h1>
       <h1 class="mr-10"></h1>
       <v-flex xs5 sm5 md3 child-flex>
+        <br/>
         <v-card flat width="520" outlined height="570" dark>
-            <v-card-title primary class="align-center"
-              >Grupos a los que perteneces:</v-card-title
-            >
+          <v-card-title primary class="align-center"
+            >Grupos a los que perteneces:</v-card-title
+          >
 
-            <h1 class="pt-0"></h1>
-            <v-card class="pt-0" color="#1f2326">
-              <v-subheader class="white--text" color="#202429">
-                Comunidades
+          <h1 class="pt-0"></h1>
+          <v-card class="pt-0" color="#1f2326">
+            <v-subheader class="white--text" color="#202429">
+              Comunidades
+              <v-spacer></v-spacer>
+              <v-btn icon> <v-icon color="#8AC53E">mdi-plus</v-icon></v-btn>
+            </v-subheader>
+            <v-list color="#1f2326">
+              <v-list-item>
+                <v-list-item-action>
+                  <v-icon color="#8AC53E">mdi-bank</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                  <v-list-item-title class="myfontGrey"
+                    >Grupo de matemáticas</v-list-item-title
+                  >
+                </v-list-item-content>
+              </v-list-item>
+
+              <v-list-item>
+                <v-list-item-action>
+                  <v-icon color="#8AC53E">mdi-bank</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                  <v-list-item-title class="myfontGrey"
+                    >Programar en Java</v-list-item-title
+                  >
+                </v-list-item-content>
+              </v-list-item>
+
+              <v-list-item>
+                <v-list-item-action>
+                  <v-icon color="#8AC53E">mdi-bank</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                  <v-list-item-title class="myfontGrey"
+                    >Aprender lengua sin morir en el intento</v-list-item-title
+                  >
+                </v-list-item-content>
+              </v-list-item>
+
+              <v-list-item>
+                <v-list-item-action>
+                  <v-icon color="#8AC53E">mdi-bank</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                  <v-list-item-title class="myfontGrey"
+                    >How to hack any WiFi with Kali Linux</v-list-item-title
+                  >
+                </v-list-item-content>
+              </v-list-item>
+
+              <v-divider :inset="inset"></v-divider>
+
+              <v-subheader class="white--text">
+                Foros
                 <v-spacer></v-spacer>
-                <v-btn icon> <v-icon color="#8AC53E">mdi-plus</v-icon></v-btn>
+                <v-btn icon><v-icon color="#8AC53E">mdi-plus</v-icon></v-btn>
               </v-subheader>
-              <v-list color="#1f2326">
-                <v-list-item>
-                  <v-list-item-action>
-                    <v-icon color="#8AC53E">mdi-bank</v-icon>
-                  </v-list-item-action>
-                  <v-list-item-content>
-                    <v-list-item-title class="myfontGrey"
-                      >Grupo de matemáticas</v-list-item-title
-                    >
-                  </v-list-item-content>
-                </v-list-item>
 
-                <v-list-item>
-                  <v-list-item-action>
-                    <v-icon color="#8AC53E">mdi-bank</v-icon>
-                  </v-list-item-action>
-                  <v-list-item-content>
-                    <v-list-item-title class="myfontGrey"
-                      >Programar en Java</v-list-item-title
-                    >
-                  </v-list-item-content>
-                </v-list-item>
+              <v-list-item>
+                <v-list-item-action>
+                  <v-icon color="#8AC53E"
+                    >mdi-google-circles-communities</v-icon
+                  >
+                </v-list-item-action>
+                <v-list-item-content>
+                  <v-list-item-title class="myfontGrey"
+                    >¿Cómo se halla la raíz cúbica de mi
+                    gato?</v-list-item-title
+                  >
+                </v-list-item-content>
+              </v-list-item>
 
-                <v-list-item>
-                  <v-list-item-action>
-                    <v-icon color="#8AC53E">mdi-bank</v-icon>
-                  </v-list-item-action>
-                  <v-list-item-content>
-                    <v-list-item-title class="myfontGrey"
-                      >Aprender lengua sin morir en el
-                      intento</v-list-item-title
-                    >
-                  </v-list-item-content>
-                </v-list-item>
+              <v-divider :inset="inset"></v-divider>
 
-                <v-list-item>
-                  <v-list-item-action>
-                    <v-icon color="#8AC53E">mdi-bank</v-icon>
-                  </v-list-item-action>
-                  <v-list-item-content>
-                    <v-list-item-title class="myfontGrey"
-                      >How to hack any WiFi with Kali Linux</v-list-item-title
-                    >
-                  </v-list-item-content>
-                </v-list-item>
+              <v-list-item>
+                <v-list-item-action>
+                  <v-icon color="#8AC53E"
+                    >mdi-google-circles-communities</v-icon
+                  >
+                </v-list-item-action>
 
-                <v-divider :inset="inset"></v-divider>
+                <v-list-item-content>
+                  <v-list-item-title class="myfontGrey"
+                    >Fallos típicos de Atom</v-list-item-title
+                  >
+                </v-list-item-content>
+              </v-list-item>
 
-                <v-subheader class="white--text">
-                  Foros
-                  <v-spacer></v-spacer>
-                  <v-btn icon><v-icon color="#8AC53E">mdi-plus</v-icon></v-btn>
-                </v-subheader>
+              <v-divider :inset="inset"></v-divider>
 
-                <v-list-item>
-                  <v-list-item-action>
-                    <v-icon color="#8AC53E"
-                      >mdi-google-circles-communities</v-icon
-                    >
-                  </v-list-item-action>
-                  <v-list-item-content>
-                    <v-list-item-title class="myfontGrey"
-                      >¿Cómo se halla la raíz cúbica de mi
-                      gato?</v-list-item-title
-                    >
-                  </v-list-item-content>
-                </v-list-item>
+              <v-list-item>
+                <v-list-item-action>
+                  <v-icon color="#8AC53E"
+                    >mdi-google-circles-communities</v-icon
+                  >
+                </v-list-item-action>
+                <v-list-item-content>
+                  <v-list-item-title class="myfontGrey"
+                    >Soy un goofy goober</v-list-item-title
+                  >
+                </v-list-item-content>
+              </v-list-item>
 
-                <v-divider :inset="inset"></v-divider>
+              <v-divider :inset="inset"></v-divider>
 
-                <v-list-item>
-                  <v-list-item-action>
-                    <v-icon color="#8AC53E"
-                      >mdi-google-circles-communities</v-icon
-                    >
-                  </v-list-item-action>
-
-                  <v-list-item-content>
-                    <v-list-item-title class="myfontGrey"
-                      >Fallos típicos de Atom</v-list-item-title
-                    >
-                  </v-list-item-content>
-                </v-list-item>
-
-                <v-divider :inset="inset"></v-divider>
-
-                <v-list-item>
-                  <v-list-item-action>
-                    <v-icon color="#8AC53E"
-                      >mdi-google-circles-communities</v-icon
-                    >
-                  </v-list-item-action>
-                  <v-list-item-content>
-                    <v-list-item-title class="myfontGrey"
-                      >Soy un goofy goober</v-list-item-title
-                    >
-                  </v-list-item-content>
-                </v-list-item>
-
-                <v-divider :inset="inset"></v-divider>
-
-                <v-list-item>
-                  <v-list-item-action>
-                    <v-icon color="#8AC53E"
-                      >mdi-google-circles-communities</v-icon
-                    >
-                  </v-list-item-action>
-                  <v-list-item-content>
-                    <v-list-item-title class="myfontGrey"
-                      >Tortilla 3 euros, la mejor</v-list-item-title
-                    >
-                  </v-list-item-content>
-                </v-list-item>
-              </v-list>
-            </v-card>
-          
+              <v-list-item>
+                <v-list-item-action>
+                  <v-icon color="#8AC53E"
+                    >mdi-google-circles-communities</v-icon
+                  >
+                </v-list-item-action>
+                <v-list-item-content>
+                  <v-list-item-title class="myfontGrey"
+                    >Tortilla 3 euros, la mejor</v-list-item-title
+                  >
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
+          </v-card>
         </v-card>
       </v-flex>
     </v-layout>
@@ -581,8 +543,7 @@ export default {
   data: () => ({
     /*iconos de la navigation bar (la de la izquierda) */
     iconos: [
-      { title: "", icon: "", ref: "" } /*Blank*/,
-      { title: "", icon: "", ref: "" } /*Blank*/,
+      
       {
         title: "Google",
         icon: "mdi-google-glass",
@@ -600,6 +561,10 @@ export default {
         ref: "https://www.spotify.com/es/",
       } /*Spotify*/,
 
+      { title: "", icon: "", ref: "" } /*Blank*/,
+      { title: "", icon: "", ref: "" } /*Blank*/,
+      { title: "", icon: "", ref: "" } /*Blank*/,
+      { title: "", icon: "", ref: "" } /*Blank*/,
       { title: "", icon: "", ref: "" } /*Blank*/,
       { title: "", icon: "", ref: "" } /*Blank*/,
       { title: "", icon: "", ref: "" } /*Blank*/,
@@ -627,25 +592,9 @@ export default {
     sticky: true,
   }),
   methods: {
-    /*metodoForo() {
-      this.$router.push("/foro");
+    goTo(dir) {
+      this.$router.push("/" + dir);
     },
-    metodoPerfil() {
-      this.$router.push("/profile");
-    },
-    metodoHome() {
-      this.$router.push("/about");
-    },
-    goTo(dir)
-      {
-        this.$router.push('/' + dir);
-      },
-  },
-  created() {
-    setInterval(() => {
-      if (!this.autorun) return;
-      if (++this.window >= this.length) this.window = 0;
-    }, 1000);*/
   },
 };
 </script>
