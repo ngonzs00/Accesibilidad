@@ -2,8 +2,8 @@
  <v-container class="success" fluid grid-list-md style="height:2000px">
     <v-layout>
       <v-app-bar app color="#191C1F">
-        <v-app-bar-nav-icon class="white--text"></v-app-bar-nav-icon> <!--Le añadimos un icono blanco-->
-        <v-toolbar-title class="white--text">Pánico del Kernel</v-toolbar-title> <!--Le añadimos el titulo-->
+        <v-app-bar-nav-icon class="white--text"></v-app-bar-nav-icon> 
+        <v-toolbar-title class="white--text">Pánico del Kernel</v-toolbar-title> 
         <v-avatar size="40" class="ml-3">
           <img src="../assets/LogoPanicoKernel.jpeg" absolute alt="">
         </v-avatar>
@@ -28,13 +28,23 @@
 
     </v-layout>
     
-    
-    <br>
+      <br>
       <br>
       <br>  
+      <br>
+      <br>  
+      <v-progress-linear background-color="#8AC53E" color="#8AC53E" value="15" md3></v-progress-linear>
+      <v-text-field
+          dark
+          prepend-inner-icon="mdi-magnify"
+          label="Search"
+          class="sm-and-down"
+        />
         <v-card color="grey darken-4" dark>
-            <v-card-title primary class="align-center">Maquina Virtual 1 <v-btn class= ml-12  dark color="cyan darken-4">Download</v-btn></v-card-title>
-            <v-card-text> SO: Linux<br>
+          
+            <v-card-title primary class="align-center">Maquina Virtual 1 <v-spacer></v-spacer><v-btn class=ml-15 dark color="#6ADD17">Download</v-btn></v-card-title>
+            
+            <v-card-text> <h2>SO: Ubuntu  <v-icon large class=ml-2 color="#ff6303">mdi-ubuntu</v-icon></h2>
                             Usuario: Alexchupala<br>
                             Fecha:10/12/2020<br>
                             Descripción: texto de prueba texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba</v-card-text>
@@ -44,8 +54,8 @@
             <br>
 
             <v-card color="grey darken-4" dark>
-            <v-card-title primary class="align-center">Maquina Virtual 2<v-btn class= ml-12  dark color="cyan darken-4">Download</v-btn></v-card-title>
-            <v-card-text> SO: Linux<br>
+            <v-card-title primary class="align-center">Maquina Virtual 2<v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
+            <v-card-text> <h2>SO: Windows  <v-icon large class=ml-2 color="#2882FF">mdi-windows</v-icon></h2>
                             Usuario: Jotychupala<br>
                             Fecha:10/12/2020<br>
                             Descripción: texto de prueba texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba</v-card-text>
@@ -55,8 +65,8 @@
             
             <br>
              <v-card color="grey darken-4" dark>
-            <v-card-title primary class="align-center">Maquina Virtual 3 <v-btn class= ml-12  dark color="cyan darken-4">Download</v-btn></v-card-title>
-            <v-card-text> SO: Linux<br>
+            <v-card-title primary class="align-center">Maquina Virtual 3 <v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
+            <v-card-text><h2>SO: Apple  <v-icon large class=ml-2 >mdi-apple</v-icon></h2>
                             Usuario: Namochupala<br>
                             Fecha:10/12/2020<br>
                             Descripción: texto de prueba texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba</v-card-text>
@@ -68,8 +78,8 @@
     <br>
     
         <v-card color="grey darken-4" dark>
-            <v-card-title primary class="align-center">Maquina Virtual 1 <v-btn class= ml-12  dark color="cyan darken-4">Download</v-btn></v-card-title>
-            <v-card-text> SO: Linux<br>
+            <v-card-title primary class="align-center">Maquina Virtual 4 <v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
+            <v-card-text> <h2>SO: Linux  <v-icon large class=ml-2 color="#FFEB00">mdi-linux</v-icon></h2>
                             Usuario: Alexchupala<br>
                             Fecha:10/12/2020<br>
                             Descripción: texto de prueba texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba</v-card-text>
@@ -78,7 +88,7 @@
             </v-card>
             <br>
             <v-card color="grey darken-4" dark>
-            <v-card-title primary class="align-center">Maquina Virtual 2<v-btn class= ml-12  dark color="cyan darken-4">Download</v-btn></v-card-title>
+            <v-card-title primary class="align-center">Maquina Virtual 5<v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
             <v-card-text> SO: Linux<br>
                             Usuario: Jotychupala<br>
                             Fecha:10/12/2020<br>
@@ -88,7 +98,7 @@
             </v-card>
             <br>
              <v-card color="grey darken-4" dark>
-            <v-card-title primary class="align-center">Maquina Virtual 3 <v-btn class= ml-12  dark color="cyan darken-4">Download</v-btn></v-card-title>
+            <v-card-title primary class="align-center">Maquina Virtual 6 <v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
             <v-card-text> SO: Linux<br>
                             Usuario: Namochupala<br>
                             Fecha:10/12/2020<br>
@@ -99,9 +109,9 @@
             
     
     <br />
+     
 
-   
-
+      
     
       
     </v-layout>
@@ -206,4 +216,7 @@
   {
     cursor: pointer
   }
+  
+       
+
 </style>
