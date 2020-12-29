@@ -2,71 +2,22 @@
 <template>
   <v-container class="success" fluid grid-list-md style="height: 2000px">
     <v-layout>
-      <v-app-bar
-        :clipped-left="$vuetify.breakpoint.lgAndUp"
-        app
-        color="#191C1F"
-        dark
-      >
-        <v-flex xs2 sm2 md1>
-          <v-list-item-avatar>
-            <v-img src="../assets/LogoPanicoKernel.jpeg"></v-img>
-          </v-list-item-avatar>
-        </v-flex>
-        <v-flex xs4 sm4 md2>
-          <v-toolbar-title>
-            <span>Pánico Del Kernel</span>
-          </v-toolbar-title>
-        </v-flex>
+      <v-app-bar app color="#191C1F">
+        <v-avatar size="40" class="mr-5">
+          <img src="../assets/LogoPanicoKernel.jpeg" absolute alt="" />
+        </v-avatar>
 
-        <v-flex xs4 sm4 md1>
-          <v-chip class="ma-2" color="red" text-color="white" label>
-            <v-btn icon href="https://www.youtube.com/" target="_blank">
-              <v-icon>mdi-youtube</v-icon>
-            </v-btn>
-          </v-chip>
-        </v-flex>
-
-        <v-flex xs4 sm4 md1>
-          <v-chip
-            class="ma-2"
-            color="purple lighten-1"
-            text-color="white"
-            label
-          >
-            <v-btn icon href="https://www.instagram.com/" target="_blank">
-              <v-icon>mdi-instagram</v-icon>
-            </v-btn>
-          </v-chip>
-        </v-flex>
-
-        <v-flex xs4 sm4 md1>
-          <v-chip class="ma-2" color="cyan" text-color="white" label>
-            <v-btn icon href="https://www.twitter.com/" target="_blank">
-              <v-icon>mdi-twitter</v-icon>
-            </v-btn>
-          </v-chip>
-        </v-flex>
-
-        <v-flex xs4 sm4 md1>
-          <v-chip class="ma-2" color="grey darken-3" text-color="white" label>
-            <v-btn icon href="https://www.github.com/" target="_blank">
-              <v-icon>mdi-github-box</v-icon>
-            </v-btn>
-          </v-chip>
-        </v-flex>
-        <v-flex xs4 sm4 md1> </v-flex>
-
-        <v-flex xs6 sm4 md2>
-          <v-btn block @click="clickLogin" dark color="cyan darken-4"
-            >log-in</v-btn
-          >
-        </v-flex>
-        <v-flex xs6 sm4 md2>
-          <v-btn block @click="clickRegister" dark color="teal darken-4"
-            >registro</v-btn
-          >
-        </v-flex>
+        <v-toolbar-title class="white--text">Pánico del Kernel</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <h1 class="white--text body-1 ma-5 hoverMouse" @click="goTo('')">
+          Página principal
+        </h1>
+        <h1 class="white--text body-1 ma-5 hoverMouse" @click="goTo('merch')">
+          Merchandising
+        </h1>
+        <h1 class="white--text body-1 ma-5 hoverMouse" @click="goTo('faq')">
+          About us
+        </h1>
       </v-app-bar>
     </v-layout>
 
@@ -144,8 +95,7 @@
     </v-layout>
     <br />
     <v-layout row wrap align-center>
-            <v-flex xs1 sm1 md1>
-            </v-flex>
+      <v-flex xs1 sm1 md1> </v-flex>
       <v-flex xs5 sm5 md5>
         <v-card class color="#292E33" dark width="500">
           <v-card-text>
@@ -178,7 +128,7 @@
       </v-flex>
 
       <v-flex xs5 sm5 md5>
-          <v-card class color="#292E33" dark width="500">
+        <v-card class color="#292E33" dark width="500">
           <v-card-text>
             <v-sheet color="rgba(0, 0, 0, .12)">
               <v-sparkline
@@ -207,51 +157,11 @@
             <v-btn color="#6ADD17" block text> Ir a Registro </v-btn>
           </v-card-actions>
         </v-card>
-
       </v-flex>
     </v-layout>
 
     <br />
 
-    <br />
-    <v-layout>
-      <v-flex xs12 sm6 md6>
-        <div class="text-center">
-          <v-btn dark color="#6ADD17" @click="snackbar3 = true"
-            >Configuración de cookies</v-btn
-          >
-
-          <v-snackbar
-            color="blue-grey darken-4"
-            v-model="snackbar3"
-            :multi-line="multiLine"
-          >
-            {{ cookies }}
-            <v-btn dark color="#6ADD17" cookies @click="snackbar3 = false"
-              >Cerrar</v-btn
-            >
-          </v-snackbar>
-        </div>
-      </v-flex>
-      <v-flex xs12 sm6 md6>
-        <div class="text-center">
-          <v-btn dark color="#6ADD17" @click="snackbar2 = true"
-            >Configuración de privacidad</v-btn
-          >
-
-          <v-snackbar
-            color="blue-grey darken-4"
-            v-model="snackbar2"
-            :multi-line="multiLine"
-          >
-            {{ privacidad }}
-            <v-btn dark color="#6ADD17" privacidad @click="snackbar2 = false"
-              >Cerrar</v-btn
-            >
-          </v-snackbar>
-        </div>
-      </v-flex>
-    </v-layout>
     <br />
 
     <v-card class="elevation-16 mx-auto" width="300" color="#292E33" dark>
@@ -268,7 +178,6 @@
             background-color="grey darken-1"
             empty-icon="$ratingFull"
             half-increments
-            hover
           ></v-rating>
         </div>
       </v-card-text>
@@ -321,8 +230,6 @@
 
 
 <script>
-
-
 export default {
   data: () => ({
     multiLine: true,
@@ -374,7 +281,7 @@ export default {
     ],
     value: [2, 8, 27, 35, 46, 58, 60, 99, 102, 141],
     value2: [1, 2, 6, 7, 5, 9, 5, 12, 16, 8],
-    rating: 4.5,
+    rating: 4,
   }),
   methods: {
     clickFaq() {

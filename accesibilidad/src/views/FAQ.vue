@@ -1,64 +1,28 @@
 
 <template>
-  <v-container dark class="warning" fluid grid-list-md style="height:2000px">
+  <v-container dark class="success" fluid grid-list-md style="height:2000px">
     <br />
   <v-layout>
-      <v-app-bar :clipped-left="$vuetify.breakpoint.lgAndUp" app color="#191C1F" dark>
-        <v-flex xs2 sm2 md1>
-          <v-list-item-avatar>
-            <v-img src="../assets/LogoPanicoKernel.jpeg"></v-img>
-          </v-list-item-avatar>
-        </v-flex>
-        <v-flex xs4 sm4 md2>
-          <v-toolbar-title>
-            <span>Pánico Del Kernel</span>
-          </v-toolbar-title>
-        </v-flex>
+            <v-app-bar app color="#191C1F">
+        <v-avatar size="40" class="mr-5">
+          <img src="../assets/LogoPanicoKernel.jpeg" absolute alt="" />
+        </v-avatar>
 
-        <v-flex xs4 sm4 md1>
-          <v-chip class="ma-2" color="red" text-color="white" label>
-            <v-btn icon href="https://www.youtube.com/" target="_blank">
-              <v-icon>mdi-youtube</v-icon>
-            </v-btn>
-          </v-chip>
-        </v-flex>
-
-        <v-flex xs4 sm4 md1>
-          <v-chip class="ma-2" color="purple lighten-1" text-color="white" label>
-            <v-btn icon href="https://www.instagram.com/" target="_blank">
-              <v-icon>mdi-instagram</v-icon>
-            </v-btn>
-          </v-chip>
-        </v-flex>
-
-        <v-flex xs4 sm4 md1>
-          <v-chip class="ma-2" color="cyan" text-color="white" label>
-            <v-btn icon href="https://www.twitter.com/" target="_blank">
-              <v-icon>mdi-twitter</v-icon>
-            </v-btn>
-          </v-chip>
-        </v-flex>
-
-        <v-flex xs4 sm4 md1>
-          <v-chip class="ma-2" color="grey darken-3" text-color="white" label>
-            <v-btn icon href="https://www.github.com/" target="_blank">
-              <v-icon>mdi-github-box</v-icon>
-            </v-btn>
-          </v-chip>
-        </v-flex>
-        <v-flex xs4 sm4 md1>
-        </v-flex>
-
-         <v-flex xs6 sm4 md2>
-        <v-btn block @click="clickLogin" dark color="cyan darken-4">log-in</v-btn>
-      </v-flex>
-      <v-flex xs6 sm4 md2>
-        <v-btn block @click="clickRegister" dark color="teal darken-4">registro</v-btn>
-      </v-flex>
+        <v-toolbar-title class="white--text">Pánico del Kernel</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <h1 class="white--text body-1 ma-5 hoverMouse" @click="goTo('')">
+          Página principal
+        </h1>
+        <h1 class="white--text body-1 ma-5 hoverMouse" @click="goTo('merch')">
+          Merchandising
+        </h1>
+        <h1 class="white--text body-1 ma-5 hoverMouse" @click="goTo('faq')">
+          About us
+        </h1>
       </v-app-bar>
     </v-layout>
     <v-flex xs12 sm12 md12>
-      <v-card color="#212F3D" dark>
+      <v-card color="#292E33" dark>
         <v-card-title primary class="align-center">Preguntas más frecuentes</v-card-title>
         <v-card-text>En esta sección de la página web de verán reflejadas las principales preguntas que puede surgir a los usuarios de la aplicación.</v-card-text>
         <center>
@@ -73,129 +37,129 @@
     <br />
 
     <v-expansion-panels v-model="panel" :readonly="readonly" multiple dark>
-      <v-expansion-panel dark class="blue-grey darken-4">
-        <v-expansion-panel-header dark class="blue-grey darken-4">¿Cuál el es objetivo de esta web?</v-expansion-panel-header>
+      <v-expansion-panel dark color="#292E33">
+        <v-expansion-panel-header dark color="#292E33">¿Cuál el es objetivo de esta web?</v-expansion-panel-header>
         <v-expansion-panel-content
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >Ser el centro de reunión de todas las personas a las que les interesa la ciberseguridad independientemente de sus conocimientos.</v-expansion-panel-content>
       </v-expansion-panel>
 
-      <v-expansion-panel dark class="blue-grey darken-4">
+      <v-expansion-panel dark color="#292E33">
         <v-expansion-panel-header
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >¿Se puede acceder a todos los contenidos de la aplicación sin loguearse?</v-expansion-panel-header>
         <v-expansion-panel-content
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >No, para acceder a algunos contenidos determinados es necesario tener un perfil en nuestra página web.</v-expansion-panel-content>
       </v-expansion-panel>
 
       
-      <v-expansion-panel dark class="blue-grey darken-4">
+      <v-expansion-panel dark color="#292E33">
         <v-expansion-panel-header
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >¿Qué tipos de productos se pueden comprar en Merchandaising?</v-expansion-panel-header>
         <v-expansion-panel-content
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >Hay una gran variedad de productos, desde alfombrillas hasta ratones, pasando por camisetas.</v-expansion-panel-content>
       </v-expansion-panel>
 
 
-      <v-expansion-panel dark class="blue-grey darken-4">
-        <v-expansion-panel-header dark class="blue-grey darken-4">¿Para qué sirve la zona de Máquinas Virtuales?</v-expansion-panel-header>
+      <v-expansion-panel dark color="#292E33">
+        <v-expansion-panel-header dark color="#292E33">¿Para qué sirve la zona de Máquinas Virtuales?</v-expansion-panel-header>
         <v-expansion-panel-content
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >En esta zona te puedes encontrar Máquinas Virtuales que tienen vulnerabilidades en las que el objetivo del usuario es descubrir cómo se van a "romper"</v-expansion-panel-content>
       </v-expansion-panel>
 
 
-      <v-expansion-panel dark class="blue-grey darken-4">
+      <v-expansion-panel dark color="#292E33">
         <v-expansion-panel-header
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >¿Qué es la zona de Kernels?</v-expansion-panel-header>
         <v-expansion-panel-content
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >Son las actividades de hacking que se pueden realizar en nuestra página web.</v-expansion-panel-content>
       </v-expansion-panel>
 
-      <v-expansion-panel dark class="blue-grey darken-4">
-        <v-expansion-panel-header dark class="blue-grey darken-4">¿Tengo que acceder a la zona de Máquinas Virtuales para hacer los "kernels"?</v-expansion-panel-header>
+      <v-expansion-panel dark color="#292E33">
+        <v-expansion-panel-header dark color="#292E33">¿Tengo que acceder a la zona de Máquinas Virtuales para hacer los "kernels"?</v-expansion-panel-header>
         <v-expansion-panel-content
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >No, la máquina virtual que sea necesaria dentro de los kernels elegirá la máquina virtual de forma automática</v-expansion-panel-content>
       </v-expansion-panel>
 
-        <v-expansion-panel dark class="blue-grey darken-4">
+        <v-expansion-panel dark color="#292E33">
         <v-expansion-panel-header
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >¿Es seguro utilizar la zona de Máquinas Virtuales?</v-expansion-panel-header>
         <v-expansion-panel-content
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >Sí, es completamente seguro ya que se accederá a cada una de las máquinas mediante una VPN, así que los datos permanecerán ocultos.</v-expansion-panel-content>
       </v-expansion-panel>
 
-      <v-expansion-panel dark class="blue-grey darken-4">
+      <v-expansion-panel dark color="#292E33">
         <v-expansion-panel-header
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >¿De qué formas se pueden ordenar los hilos?</v-expansion-panel-header>
         <v-expansion-panel-content
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >Por recientes, por ID, aleatoriamente y alfabéticamente.</v-expansion-panel-content>
       </v-expansion-panel>
 
-      <v-expansion-panel dark class="blue-grey darken-4">
+      <v-expansion-panel dark color="#292E33">
         <v-expansion-panel-header
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >¿Puedo editar un hilo una vez publicado?</v-expansion-panel-header>
         <v-expansion-panel-content
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >No se puede editar una post una vez se ha realizado, por lo que deberás tener cuidado a la hora de publicarlo.</v-expansion-panel-content>
       </v-expansion-panel>
 
-      <v-expansion-panel dark class="blue-grey darken-4">
+      <v-expansion-panel dark color="#292E33">
         <v-expansion-panel-header
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >¿Cómo puedo editar el perfil?</v-expansion-panel-header>
         <v-expansion-panel-content
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >En la sección de perfil, se puede encontrar un botón llamado "Editar Perfil" en el que se puede pulsar para conseguir tal funcionalidad.</v-expansion-panel-content>
       </v-expansion-panel>
 
-            <v-expansion-panel dark class="blue-grey darken-4">
+            <v-expansion-panel dark color="#292E33">
         <v-expansion-panel-header
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >¿Se pueden descargar las máquinas virtuales?</v-expansion-panel-header>
         <v-expansion-panel-content
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >Sí, la opción de realizar la descarga de máquinas virtuales está permitida para que los usuarios las puedan usar localmente en sus ordenadores.</v-expansion-panel-content>
       </v-expansion-panel>
 
-      <v-expansion-panel dark class="blue-grey darken-4">
+      <v-expansion-panel dark color="#292E33">
         <v-expansion-panel-header
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >¿Puedo eliminar un hilo una vez publicado?</v-expansion-panel-header>
         <v-expansion-panel-content
           dark
-          class="blue-grey darken-4"
+          color="#292E33"
         >Sí, se puede eliminar un hilo si es que has cometido un error a la hora de redactarlo.</v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
