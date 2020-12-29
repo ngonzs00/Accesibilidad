@@ -111,7 +111,7 @@
       <v-col cols="6">
         <v-card
           width="400"
-          class="xs-right mr-10 success"
+          class="xs-right ml-10 success"
           dark
           elevation="3"
           tile
@@ -146,7 +146,7 @@
       <v-col cols="3"></v-col>
     </v-layout>
 
-    <v-layout class="mt-10">
+    <v-layout class="mt-10  ml-14">
       <v-col cols="4"></v-col>
       <v-col class="ml-5" cols="6">
         <v-btn class="mx-1 black--text" color="#8AC53E" tile
