@@ -9,15 +9,16 @@
 
         <v-toolbar-title class="white--text">Pánico del Kernel</v-toolbar-title>
         <v-spacer></v-spacer>
-        <h1 class="white--text body-1 ma-5 hoverMouse" @click="goTo('')">
-          Página principal
-        </h1>
-        <h1 class="white--text body-1 ma-5 hoverMouse" @click="goTo('merch')">
-          Merchandising
-        </h1>
-        <h1 class="white--text body-1 ma-5 hoverMouse" @click="goTo('faq')">
-          About us
-        </h1>
+        <v-flex xs5 sm5 md5> </v-flex>
+        <v-flex xs1 sm1 md1>
+          <v-btn large dark color="#191C1F" @click="clickLogin"> Login </v-btn>
+        </v-flex>
+        <v-flex xs1 sm1 md1>
+          <v-btn large dark color="#191C1F" @click="clickLogin">
+            Register
+          </v-btn>
+        </v-flex>
+        <v-flex xs1 sm1 md1> </v-flex>
       </v-app-bar>
     </v-layout>
 
@@ -73,8 +74,8 @@
     <v-layout row wrap align-center>
       <v-flex xs12 sm6 md4>
         <v-card color="#6ADD17">
-          <v-btn @click="clickDesarrollo" block large color="#6ADD17"
-            >Acceso al KERNELS</v-btn
+          <v-btn @click="clickKernels" block large color="#6ADD17"
+            >Acceso l KERNELS</v-btn
           >
         </v-card>
       </v-flex>
@@ -87,13 +88,14 @@
       </v-flex>
       <v-flex xs12 sm6 md4>
         <v-card color="#6ADD17">
-          <v-btn @click="clickAyuda" block large color="#6ADD17"
+          <v-btn @click="clickMV" block large color="#6ADD17"
             >Acceso a las MÁQUINAS VIRTUALES</v-btn
           >
         </v-card>
       </v-flex>
     </v-layout>
     <br />
+
     <v-layout row wrap align-center>
       <v-flex xs1 sm1 md1> </v-flex>
       <v-flex xs5 sm5 md5>
@@ -122,7 +124,9 @@
           <v-divider></v-divider>
 
           <v-card-actions class="justify-center">
-            <v-btn color="#6ADD17" block text> Ir a Kernels </v-btn>
+            <v-btn @click="clickKernels" color="#6ADD17" block text>
+              Ir a Kernels
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -154,10 +158,13 @@
           <v-divider></v-divider>
 
           <v-card-actions class="justify-center">
-            <v-btn color="#6ADD17" block text> Ir a Registro </v-btn>
+            <v-btn @click="clickRegister" color="#6ADD17" block text>
+              Ir a Registro
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
+      <v-flex xs1 sm1 md1> </v-flex>
     </v-layout>
 
     <br />
@@ -199,10 +206,10 @@
         <v-btn color="white" @click="clickFaq" text rounded class="my-2"
           >FAQ</v-btn
         >
-        <v-btn color="white" @click="clickAyuda" text rounded class="my-2"
+        <v-btn color="white" @click="clickMV" text rounded class="my-2"
           >Ayuda</v-btn
         >
-        <v-btn color="white" @click="clickDesarrollo" text rounded class="my-2"
+        <v-btn color="white" @click="clickKernels" text rounded class="my-2"
           >Desarrollo</v-btn
         >
         <v-col class="warning py-4 text-center white--text" cols="12">
@@ -287,23 +294,23 @@ export default {
     clickFaq() {
       this.$router.push("/faq");
     },
-    clickDesarrollo() {
-      this.$router.push("/developers");
+    clickKernels() {
+      this.$router.push("/kernels");
     },
     clickMain() {
-      this.$router.push("/about");
+      this.$router.push("/");
     },
     clickPerfil() {
       this.$router.push("/profile");
-    },
-    clickAyuda() {
-      this.$router.push("/help");
     },
     clickLogin() {
       this.$router.push("/login");
     },
     clickRegister() {
       this.$router.push("/register");
+    },
+    clickMV() {
+      this.$router.push("/vm");
     },
   },
 };
