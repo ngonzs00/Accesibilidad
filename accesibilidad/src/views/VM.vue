@@ -1,5 +1,5 @@
 <template>
- <v-container class="success" fluid grid-list-md style="height:2000px">
+ <v-container class="success" fluid grid-list-md style="height:2100px">
     <v-layout>
       <v-app-bar app color="#191C1F">
         <v-app-bar-nav-icon class="white--text"></v-app-bar-nav-icon> 
@@ -40,13 +40,15 @@
           label="Search"
           class="sm-and-down"
         />
+         <br>
+      <br>
         <v-card color="grey darken-4" dark>
           
             <v-card-title primary class="align-center">Maquina Virtual 1 <v-spacer></v-spacer><v-btn class=ml-15 dark color="#6ADD17">Download</v-btn></v-card-title>
             
             <v-card-text> <h2>SO: Ubuntu  <v-icon large class=ml-2 color="#ff6303">mdi-ubuntu</v-icon></h2>
                             Usuario: Alexchupala<br>
-                            Fecha:10/12/2020<br>
+                            Fecha:10/10/2020<br>
                             Descripción: texto de prueba texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba</v-card-text>
             
             </v-card>
@@ -57,7 +59,7 @@
             <v-card-title primary class="align-center">Maquina Virtual 2<v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
             <v-card-text> <h2>SO: Windows  <v-icon large class=ml-2 color="#2882FF">mdi-windows</v-icon></h2>
                             Usuario: Jotychupala<br>
-                            Fecha:10/12/2020<br>
+                            Fecha:5/11/2020<br>
                             Descripción: texto de prueba texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba</v-card-text>
             </v-card-text>
                         
@@ -68,7 +70,7 @@
             <v-card-title primary class="align-center">Maquina Virtual 3 <v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
             <v-card-text><h2>SO: Apple  <v-icon large class=ml-2 >mdi-apple</v-icon></h2>
                             Usuario: Namochupala<br>
-                            Fecha:10/12/2020<br>
+                            Fecha:22/12/2020<br>
                             Descripción: texto de prueba texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba</v-card-text>
             </v-card-text>
             
@@ -89,9 +91,9 @@
             <br>
             <v-card color="grey darken-4" dark>
             <v-card-title primary class="align-center">Maquina Virtual 5<v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
-            <v-card-text> SO: Linux<br>
+            <v-card-text> <h2>SO: Ubuntu  <v-icon large class=ml-2 color="#ff6303">mdi-ubuntu</v-icon></h2>
                             Usuario: Jotychupala<br>
-                            Fecha:10/12/2020<br>
+                            Fecha:30/8/2020<br>
                             Descripción: texto de prueba texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba</v-card-text>
             </v-card-text>
             
@@ -99,9 +101,9 @@
             <br>
              <v-card color="grey darken-4" dark>
             <v-card-title primary class="align-center">Maquina Virtual 6 <v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
-            <v-card-text> SO: Linux<br>
+            <v-card-text> <h2>SO: Ubuntu  <v-icon large class=ml-2 color="#ff6303">mdi-ubuntu</v-icon></h2>
                             Usuario: Namochupala<br>
-                            Fecha:10/12/2020<br>
+                            Fecha:20/12/2020<br>
                             Descripción: texto de prueba texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba</v-card-text>
             </v-card-text>
             
@@ -141,15 +143,8 @@
         </v-card>
       </v-timeline-item>
     </v-timeline>
-    <br />
-   
-    <br />
     <v-layout>
     </v-layout>
-    <br />
-
-    
-    <br />
    <v-footer class="warning" padless>
       <v-row justify="center" no-gutters>
         <br />
