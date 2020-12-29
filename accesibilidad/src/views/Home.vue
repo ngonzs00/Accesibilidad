@@ -121,21 +121,21 @@
 
     <v-layout row wrap align-center>
       <v-flex xs12 sm6 md4>
-        <v-card color="#6ADD17" dark>
+        <v-card color="#6ADD17">
           <v-btn @click="clickDesarrollo" block large color="#6ADD17"
             >Acceso al KERNELS</v-btn
           >
         </v-card>
       </v-flex>
       <v-flex xs12 sm6 md4>
-        <v-card color="#6ADD17" dark>
+        <v-card color="#6ADD17">
           <v-btn @click="clickFaq" block large color="#6ADD17"
             >Acceso a FAQ</v-btn
           >
         </v-card>
       </v-flex>
       <v-flex xs12 sm6 md4>
-        <v-card color="#6ADD17" dark>
+        <v-card color="#6ADD17">
           <v-btn @click="clickAyuda" block large color="#6ADD17"
             >Acceso a las MÁQUINAS VIRTUALES</v-btn
           >
@@ -144,32 +144,71 @@
     </v-layout>
     <br />
     <v-layout row wrap align-center>
-      <v-card class="mx-auto text-center" color="#292E33" dark width="500">
-        <v-card-text>
-          <v-sheet color="rgba(0, 0, 0, .12)">
-            <v-sparkline 
-              :value="value"
-              color="#6ADD17"
-              height="100"
-              padding="24"
-              stroke-linecap="round"
-              smooth
+            <v-flex xs1 sm1 md1>
+            </v-flex>
+      <v-flex xs5 sm5 md5>
+        <v-card class color="#292E33" dark width="500">
+          <v-card-text>
+            <v-sheet color="rgba(0, 0, 0, .12)">
+              <v-sparkline
+                :value="value"
+                color="#6ADD17"
+                height="100"
+                padding="10"
+                stroke-linecap="round"
+                smooth
+              >
+                <template v-slot:label="item">{{ item.value }} </template>
+              </v-sparkline>
+            </v-sheet>
+          </v-card-text>
+
+          <v-card-text>
+            <v-card-text class="display-1 font-weight-thin"
+              >Kernels completados en los últimos 10 días</v-card-text
             >
-              <template v-slot:label="item"> ${{ item.value }} </template>
-            </v-sparkline>
-          </v-sheet>
-        </v-card-text>
+          </v-card-text>
 
-        <v-card-text>
-          <v-card-text class="display-1 font-weight-thin">Kernels completados en las últimas 24 horas</v-card-text>
-        </v-card-text>
+          <v-divider></v-divider>
 
-        <v-divider></v-divider>
+          <v-card-actions class="justify-center">
+            <v-btn color="#6ADD17" block text> Ir a Kernels </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
 
-        <v-card-actions class="justify-center">
-          <v-btn color="#6ADD17" block text> Ir a Kernels </v-btn>
-        </v-card-actions>
-      </v-card>
+      <v-flex xs5 sm5 md5>
+          <v-card class color="#292E33" dark width="500">
+          <v-card-text>
+            <v-sheet color="rgba(0, 0, 0, .12)">
+              <v-sparkline
+                :value="value2"
+                color="#6ADD17"
+                height="100"
+                padding="10"
+                stroke-linecap="round"
+                smooth
+                fill
+              >
+                <template v-slot:label="item">{{ item.value }} </template>
+              </v-sparkline>
+            </v-sheet>
+          </v-card-text>
+
+          <v-card-text>
+            <v-card-text class="display-1 font-weight-thin"
+              >Usuarios registrados en los últimos 10 días</v-card-text
+            >
+          </v-card-text>
+
+          <v-divider></v-divider>
+
+          <v-card-actions class="justify-center">
+            <v-btn color="#6ADD17" block text> Ir a Registro </v-btn>
+          </v-card-actions>
+        </v-card>
+
+      </v-flex>
     </v-layout>
 
     <br />
@@ -188,11 +227,7 @@
             :multi-line="multiLine"
           >
             {{ cookies }}
-            <v-btn
-              dark
-              color="#6ADD17"
-              cookies
-              @click="snackbar3 = false"
+            <v-btn dark color="#6ADD17" cookies @click="snackbar3 = false"
               >Cerrar</v-btn
             >
           </v-snackbar>
@@ -207,13 +242,10 @@
           <v-snackbar
             color="blue-grey darken-4"
             v-model="snackbar2"
-            :multi-line="multiLine">
+            :multi-line="multiLine"
+          >
             {{ privacidad }}
-            <v-btn
-              dark
-              color="#6ADD17"
-              privacidad
-              @click="snackbar2 = false"
+            <v-btn dark color="#6ADD17" privacidad @click="snackbar2 = false"
               >Cerrar</v-btn
             >
           </v-snackbar>
@@ -289,6 +321,8 @@
 
 
 <script>
+
+
 export default {
   data: () => ({
     multiLine: true,
@@ -338,7 +372,8 @@ export default {
           "Si ya lo sabes todo acerca de ciberseguridad y quieres dar un paso más, este es tu nivel",
       },
     ],
-    value: [423, 446, 675, 510, 590, 610, 760],
+    value: [2, 8, 27, 35, 46, 58, 60, 99, 102, 141],
+    value2: [1, 2, 6, 7, 5, 9, 5, 12, 16, 8],
     rating: 4.5,
   }),
   methods: {
