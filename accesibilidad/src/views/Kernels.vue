@@ -41,7 +41,7 @@
         class="mt-12"
         color="#1F2326"
         width="100000"
-        height="700"
+        height="1000"
         >  
         <v-col>
           <v-row class="mr-10" justify="center">
@@ -79,23 +79,82 @@
           ></v-text-field>
 
           <v-row justify="center">
+
             <v-card
-              class="mt-12"
+              class="mt-12 mr-10"
               color="#292E33"
-              width="500"
+              width="550"
               height="500"
-              elevation=6
+              elevation=10
             >
+              <v-layout column align-center>      
+                  <img src="../assets/hydra.jpeg" absolute alt="" height=100 class="mt-5">
+                <h1 class="myfontWhite mt-5"> THE WITCHER</h1>
+                <h1 class="myfontWhiteNormal">SO: Linux</h1>
+                <h1 class="myfontWhiteNormal">Nivel de dificultad: 7/10</h1>
+                <h1 class="myfontWhiteNormal">Valoración de los usuarios: 8/10</h1>
+                <h1 class="myfontWhiteNormal mt-10">Descripción:</h1>
+                <h1 class="myfontGreySmall mt-3">Aprende a usar el indispensable programa: Hydra </h1>
+                <h1 class="myfontGreySmall">siguiendo la historia de Geralt de Rivia, viviendo</h1>
+                <h1 class="myfontGreySmall">sus hazañas y combates más feroces contra estas</h1>
+                <h1 class="myfontGreySmall">bestias. Con una dificultad media, esta máquina</h1>
+                <h1 class="myfontGreySmall">te enseñará a usar este magnífico software.</h1>
+                
+                <!--el root de los sistemas informáticos de la biblioteca de tu municipio.Esta máquina ofrece un desafío perfecto para principiantes, tocando muchos de los tópicos principales de la ciberseguridad-->
+              </v-layout>
+              
             </v-card>
 
             <v-card
-              class="mt-12"
+              class="mt-12 mr-10"
               color="#292E33"
-              width="500"
+              width="550"
               height="500"
-              elevation=6
+              elevation=10
             >
+              <v-layout column align-center>      
+                  <img src="../assets/mrRobot.png" absolute alt="" height=100 class="mt-5">
+                <h1 class="myfontWhite mt-5"> MR.ROBOT</h1>
+                <h1 class="myfontWhiteNormal">SO: Linux</h1>
+                <h1 class="myfontWhiteNormal">Nivel de dificultad: 2/10</h1>
+                <h1 class="myfontWhiteNormal">Valoración de los usuarios: 9/10</h1>
+                <h1 class="myfontWhiteNormal mt-10">Descripción:</h1>
+                <h1 class="myfontGreySmall mt-3">Asume el rol de un joven Elliot Alderson y consigue </h1>
+                <h1 class="myfontGreySmall">el root de los sistemas informáticos de la biblioteca</h1>
+                <h1 class="myfontGreySmall">de tu municipio.</h1>
+                <h1 class="myfontGreySmall">Esta máquina ofrece un desafío perfecto para</h1>
+                <h1 class="myfontGreySmall">principiantes a lo largo de 15 actividades. Empieza ya</h1>
+                
+                <!--el root de los sistemas informáticos de la biblioteca de tu municipio.Esta máquina ofrece un desafío perfecto para principiantes, tocando muchos de los tópicos principales de la ciberseguridad-->
+              </v-layout>
             </v-card>
+
+
+             <v-card
+              class="mt-12 mr-10"
+              color="#292E33"
+              width="550"
+              height="500"
+              elevation=10
+            >
+              <v-layout column align-center>      
+                  <img src="../assets/hacker.jpg" absolute alt="" height=100 class="mt-5">
+                <h1 class="myfontWhite mt-5">SNOWDEN</h1>
+                <h1 class="myfontWhiteNormal">SO: Windows</h1>
+                <h1 class="myfontWhiteNormal">Nivel de dificultad: 9/10</h1>
+                <h1 class="myfontWhiteNormal">Valoración de los usuarios: 7/10</h1>
+                <h1 class="myfontWhiteNormal mt-10">Descripción:</h1>
+                <h1 class="myfontGreySmall mt-3">En esta máquina pensada para usuarios avanzados</h1>
+                <h1 class="myfontGreySmall">tendrás que asumir el papel de Edward Snowden y</h1>
+                <h1 class="myfontGreySmall">conseguir el root del pentágono para extraer toda</h1>
+                <h1 class="myfontGreySmall">la información que allí se guarda. Este kernel</h1>
+                <h1 class="myfontGreySmall">es un desafío para usuarios avanzados. Cuidado.</h1>
+                
+                <!--el root de los sistemas informáticos de la biblioteca de tu municipio.Esta máquina ofrece un desafío perfecto para principiantes, tocando muchos de los tópicos principales de la ciberseguridad-->
+              </v-layout>
+            </v-card>
+
+
           </v-row>
 
         </v-col>
@@ -118,11 +177,19 @@
 
   }
 
-    .myfontGreySmall{
+  .myfontGreySmall{
 
     color: #78838a;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 20px;
+    font-size: 18px;
+
+  }
+
+   .myfontWhiteNormal{
+
+    color: #ffffff;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 18px;
 
   }
 
