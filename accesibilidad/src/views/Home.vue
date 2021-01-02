@@ -252,9 +252,9 @@ export default {
     privacidad:
       "No se difundirán en ningún caso los datos que obtengamos de su conexión. ",
     lenguajes: `En nuestros foros, los lenguajes de programación que te vas a encontrar son estos:`,
-    kernels: `En la zona de kernels se pueden acceder a diversas actividades relacionadas con el mundo del hacking.`,
-    faq: `En este zona puedes publicar cualquier cosa que tenga que ver con el mundo de la ciebrseguridad.`,
-    maqvir: `En esta sección puedes acceder a las máquinas virtuales vulnerables disponibles.`,
+    kernels: `En la zona de kernels se pueden acceder a diversas actividades y retos relacionados con el hacking.`,
+    faq: `En este zona de la web puedes publicar cualquier cosa relacionada con el mundo de la ciebrseguridad.`,
+    maqvir: `En esta sección puedes acceder a las máquinas virtuales vulnerables disponibles en esta página web.`,
     explicacionNiveles: `Una de las principales características de esta págian web es que sus contenidos están separados por niveles, por lo que siempre podrás encontrar información interesante sepas lo que sepas`,
     items: [
       {
