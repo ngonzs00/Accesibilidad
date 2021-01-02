@@ -15,7 +15,7 @@
           <v-btn large dark color="#191C1F" @click="clickLogin"> Login </v-btn>
         </v-flex>
         <v-flex xs1 sm1 md1>
-          <v-btn large dark color="#191C1F" @click="clickLogin">
+          <v-btn large dark color="#191C1F" @click="clickRegister">
             Register
           </v-btn>
         </v-flex>
