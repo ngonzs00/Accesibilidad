@@ -47,9 +47,13 @@
             <v-card-title primary class="align-center">Maquina Virtual 1 <v-spacer></v-spacer><v-btn class=ml-15 dark color="#6ADD17">Download</v-btn></v-card-title>
             
             <v-card-text> <h2>SO: Ubuntu  <v-icon large class=ml-2 color="#ff6303">mdi-ubuntu</v-icon></h2>
-                            Usuario: Alexchupala<br>
-                            Fecha:10/10/2020<br>
-                            Descripción: texto de prueba texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba</v-card-text>
+                            Usuario: jcastr05<br>
+                            Fecha: 10/10/2020<br>
+                            Descripción: <b>1.Linux básico: </b>  Familiarícese con la línea de comandos de Linux
+<b>2.Seguridad de las aplicaciones web: </b> Aprenda los conceptos de seguridad de las aplicaciones web a través de OWASP Top 10
+<b>3.Seguridad de la red: </b> Uso de herramientas esenciales como NMAP para enumerar la infraestructura.
+<b>4.Desafíos de secuencias de comandos: </b> Uso de Python y Bash para realizar diferentes tareas.
+<b> 5.Escalada de privilegios </b></v-card-text>
             
             </v-card>
             
@@ -58,9 +62,12 @@
             <v-card color="grey darken-4" dark>
             <v-card-title primary class="align-center">Maquina Virtual 2<v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
             <v-card-text> <h2>SO: Windows  <v-icon large class=ml-2 color="#2882FF">mdi-windows</v-icon></h2>
-                            Usuario: Jotychupala<br>
-                            Fecha:5/11/2020<br>
-                            Descripción: texto de prueba texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba</v-card-text>
+                            Usuario: mherrg04<br>
+                            Fecha: 5/11/2020<br>
+                            Descripción: - Utilizar herramientas estándar de la industria
+- Aprenda escenarios de ataque realistas
+- Entrena en seguridad ofensiva
+- Ejercicios y recursos de apoyo</v-card-text>
             </v-card-text>
                         
             </v-card>
@@ -68,10 +75,14 @@
             <br>
              <v-card color="grey darken-4" dark>
             <v-card-title primary class="align-center">Maquina Virtual 3 <v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
-            <v-card-text><h2>SO: Apple  <v-icon large class=ml-2 >mdi-apple</v-icon></h2>
-                            Usuario: Namochupala<br>
-                            Fecha:22/12/2020<br>
-                            Descripción: texto de prueba texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba</v-card-text>
+            <v-card-text><h2>SO: Macosx  <v-icon large class=ml-2 >mdi-apple</v-icon></h2>
+                            Usuario: aabadp02<br>
+                            Fecha: 22/12/2020<br>
+                            Descripción: - Herramientas de prueba de penetración estándar de la industria
+- Identificar y explotar diferentes servicios de red
+- Explotación de aplicaciones web a través de las vulnerabilidades más comunes de la actualidad
+- Comprender el directorio activo de Windows y atacar Kerberos
+- Técnicas posteriores a la explotación (con Powerview, Bloodhound y Mimikatz)</v-card-text>
             </v-card-text>
             
             </v-card>
@@ -82,9 +93,11 @@
         <v-card color="grey darken-4" dark>
             <v-card-title primary class="align-center">Maquina Virtual 4 <v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
             <v-card-text> <h2>SO: Linux  <v-icon large class=ml-2 color="#FFEB00">mdi-linux</v-icon></h2>
-                            Usuario: Alexchupala<br>
-                            Fecha:10/12/2020<br>
-                            Descripción: texto de prueba texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba</v-card-text>
+                            Usuario: ngonzs00<br>
+                            Fecha: 10/12/2020<br>
+                            Descripción: - Introducción a Linux
+- Ejecución de comandos y páginas de manual
+- Operadores de archivos básicos</v-card-text>
             </v-card-text>
             
             </v-card>
@@ -92,9 +105,12 @@
             <v-card color="grey darken-4" dark>
             <v-card-title primary class="align-center">Maquina Virtual 5<v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
             <v-card-text> <h2>SO: Ubuntu  <v-icon large class=ml-2 color="#ff6303">mdi-ubuntu</v-icon></h2>
-                            Usuario: Jotychupala<br>
-                            Fecha:30/8/2020<br>
-                            Descripción: texto de prueba texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba</v-card-text>
+                            Usuario: mherrg04<br>
+                            Fecha: 30/8/2020<br>
+                            Descripción: - Comprender cómo funcionan las aplicaciones web.
+- Utilizar herramientas estándar de la industria al atacar aplicaciones web.
+- Explicar y explotar las vulnerabilidades web comunes.
+- Aplicar este conocimiento a otros objetivos (ya sea en una entrevista o en una evaluación de seguridad de aplicaciones web profesional)</v-card-text>
             </v-card-text>
             
             </v-card>
@@ -102,9 +118,13 @@
              <v-card color="grey darken-4" dark>
             <v-card-title primary class="align-center">Maquina Virtual 6 <v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
             <v-card-text> <h2>SO: Ubuntu  <v-icon large class=ml-2 color="#ff6303">mdi-ubuntu</v-icon></h2>
-                            Usuario: Namochupala<br>
-                            Fecha:20/12/2020<br>
-                            Descripción: texto de prueba texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba</v-card-text>
+                            Usuario: jcastr05<br>
+                            Fecha: 20/12/2020<br>
+                            Descripción: - Gestión de amenazas y vulnerabilidades
+- Vigilancia y operaciones de seguridad
+- Emulación de amenazas
+- Respuesta a incidentes y análisis forense
+- Análisis de malware e ingeniería inversa</v-card-text>
             </v-card-text>
             
             </v-card>
