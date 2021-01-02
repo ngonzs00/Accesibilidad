@@ -9,9 +9,9 @@
         </v-avatar>
 
         <v-spacer></v-spacer>
-          <h1 class="white--text body-1 ma-5 hoverMouse" @click="goTo('')">Página principal</h1>
-          <h1 class="white--text body-1 ma-5 hoverMouse"  @click="goTo('merch')">Merchandising</h1>
-          <h1 class="white--text body-1 ma-5 hoverMouse" @click="goTo('faq')">About us</h1>
+           <v-btn color="white" @click="clickMain" text rounded class="my-2">Página principal</v-btn>
+           <v-btn color="white" @click="clickMerch" text rounded class="my-2">Merchandising</v-btn>
+          
       </v-app-bar>
     </v-layout>
     <v-layout column align-center>
@@ -168,30 +168,41 @@
    <v-footer class="warning" padless>
       <v-row justify="center" no-gutters>
         <br />
-        <v-btn color="white" @click="clickMain" text rounded class="my-2">Página principal</v-btn>
-        <v-btn color="white" text rounded class="my-2" @click="snackbar = true">Contacto</v-btn>
+        <v-btn color="white" @click="clickMain" text rounded class="my-2"
+          >Página principal</v-btn
+        >
+        <v-btn color="white" text rounded class="my-2" @click="snackbar = true"
+          >Contacto</v-btn
+        >
         <v-snackbar color="blue-grey darken-3" v-model="snackbar">
           {{ email }}
           <v-btn dark color="#33CC00" @click="snackbar = false">Cerrar</v-btn>
         </v-snackbar>
-        <v-btn color="white" @click="clickFaq" text rounded class="my-2">FAQ</v-btn>
-        <v-btn color="white" @click="clickAyuda" text rounded class="my-2">Ayuda</v-btn>
-        <v-btn color="white" @click="clickDesarrollo" text rounded class="my-2">Desarrollo</v-btn>
+        <v-btn color="white" @click="clickFaq" text rounded class="my-2"
+          >FAQ</v-btn
+        >
+        <v-btn color="white" @click="clickMV" text rounded class="my-2"
+          >Máquinas virtuales</v-btn
+        >
+        <v-btn color="white" @click="clickKernels" text rounded class="my-2"
+          >Kernels</v-btn
+        >
         <v-col class="warning py-4 text-center white--text" cols="12">
           {{ new Date().getFullYear() }} —
           <strong>Pánico Del Kernel</strong>
         </v-col>
       </v-row>
-        <v-col class="text-center" cols="12">
-        <h1
-          class="overline pt-0 white--text"
-        >Copyright © 2020 DECLIVIA A.A.E LTD All rights reserved.</h1>
+      <v-col class="text-center" cols="12">
+        <h1 class="overline pt-0 white--text">
+          Copyright © 2021 DECLIVIA A.A.E LTD All rights reserved.
+        </h1>
         <h1 class="overline pt-3 white--text">
           <a target="_blank" color="#8AC53E"></a> icons by
           <a
             target="_blank"
             href="http://code.meta-platform.com/assets/mdi/preview.html"
-          >code.meta-platform</a>
+            >code.meta-platform</a
+          >
         </h1>
       </v-col>
     </v-footer>
@@ -235,3 +246,38 @@
        
 
 </style>
+<script>
+    export default {
+      data: () => ({
+        snackbar: false,
+        email:
+      "Para contactar con los creadores utilizar el siguiente correo electrónico: panicodelkernel@gmail.com",
+        }),
+      methods: {
+          clickFaq() {
+            this.$router.push("/faq");
+          },
+          clickMerch() {
+            this.$router.push("/merch");
+          },
+          clickKernels() {
+            this.$router.push("/kernels");
+          },
+          clickMain() {
+            this.$router.push("/");
+          },
+          clickPerfil() {
+            this.$router.push("/profile");
+          },
+          clickLogin() {
+            this.$router.push("/login");
+          },
+          clickRegister() {
+            this.$router.push("/register");
+          },
+          clickMV() {
+            this.$router.push("/vm");
+          },
+        },
+    };
+</script>
