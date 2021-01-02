@@ -45,11 +45,11 @@
         >  
         <v-col>
           <v-row class="mr-10" justify="center">
-              <h1 class="mt-10 ml-10 myfontGreySmall">Kernels más populares</h1>
+              <h1 class="mt-10 ml-10 myfontGreyNormal">Kernels más populares</h1>
               <v-divider dark vertical class="mt-8 ml-8" color="#1EFF21"></v-divider>
-              <h1 class="mt-10 ml-10 myfontGreySmall">Para principantes</h1>
+              <h1 class="mt-10 ml-10 myfontGreyNormal">Para principantes</h1>
               <v-divider dark vertical class="mt-8 ml-8" color="#1EFF21"></v-divider>
-              <h1 class="mt-10 ml-10 myfontGreySmall">Todos los Kernels</h1>
+              <h1 class="mt-10 ml-10 myfontGreyNormal ">Todos los Kernels</h1>
 
           </v-row>
 
@@ -182,6 +182,14 @@
     color: #78838a;
     font-family: 'Ubuntu Mono', monospace;
     font-size: 18px;
+
+  }
+
+  .myfontGreyNormal{
+
+    color: #78838a;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 22px;
 
   }
 

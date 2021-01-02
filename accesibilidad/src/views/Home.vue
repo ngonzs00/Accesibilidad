@@ -9,31 +9,46 @@
 
         <v-toolbar-title class="white--text">Pánico del Kernel</v-toolbar-title>
         <v-spacer></v-spacer>
-        <v-flex xs5 sm5 md5> </v-flex>
-        <v-flex xs1 sm1 md1>
           <v-btn large dark color="#191C1F" @click="clickLogin" tile elevation="0"> Login </v-btn>
-        </v-flex>
-        <v-flex xs1 sm1 md1>
           <v-btn large dark color="#191C1F" @click="clickRegister" tile elevation="0">
             Register
           </v-btn>
-        </v-flex>
-        <v-flex xs1 sm1 md1> </v-flex>
       </v-app-bar>
     </v-layout>
 
-    <br />
+
+    <v-layout column align-center>
+      <v-row class="mt-12"></v-row>
+      <v-row class="mt-12"></v-row>
+      <v-row class="mt-2"></v-row>
+      <v-row align="center" class="mt-12">
+          <v-avatar size="200" class="ml-3">
+            <img src="../assets/LogoPanicoKernel.jpeg" absolute alt="">
+          </v-avatar>
+          <v-col class="mr-10">
+          <h1 class="mt-10 ml-5 myfontGrey">Pánico del Kernel</h1>
+          <h1 class="mt-1 ml-5 myfontWhite">Inicio</h1>
+          </v-col>
+      </v-row>
+
+    </v-layout>
+       <v-row class="mt-12"></v-row><v-row class="mt-12"></v-row><v-row class="mt-12"></v-row>
+      <v-row class="mt-12"></v-row>
+<v-card
+color="#1F2326"
+>
+   <!-- <br />
     <v-card color="#292E33" dark>
       <v-card-text>
         <h1 class="text-md-center">Ciberseguridad para todos</h1>
       </v-card-text>
     </v-card>
 
-    <br />
+    <br />-->
 
     <v-layout row wrap align-center>
       <v-flex xs12 sm6 md4>
-        <v-card color="#292E33" dark>
+        <v-card color="#292E33" dark class="mt-15">
           <v-card-title primary class="align-center">KERNELS</v-card-title>
           <v-card-text>{{ kernels }}</v-card-text>
           <center>
@@ -46,7 +61,7 @@
         </v-card>
       </v-flex>
       <v-flex xs12 sm6 md4 child-flex>
-        <v-card color="#292E33" dark>
+        <v-card color="#292E33" dark class="mt-15">
           <v-card-title primary class="align-center">FAQ</v-card-title>
           <v-card-text>{{ faq }}</v-card-text>
           <center>
@@ -59,7 +74,7 @@
         </v-card>
       </v-flex>
       <v-flex xs12 sm6 md4>
-        <v-card color="#292E33" dark>
+        <v-card color="#292E33" dark class="mt-15">
           <v-card-title primary class="align-center"
             >MÁQUINAS VIRTUALES</v-card-title
           >
@@ -74,21 +89,21 @@
     <v-layout row wrap align-center>
       <v-flex xs12 sm6 md4>
         <v-card color="#6ADD17">
-          <v-btn @click="clickKernels" block large color="#6ADD17"
+          <v-btn @click="clickKernels" block large color="#1EFF21"
             >Acceso a KERNELS</v-btn
           >
         </v-card>
       </v-flex>
       <v-flex xs12 sm6 md4>
         <v-card color="#6ADD17">
-          <v-btn @click="clickFaq" block large color="#6ADD17"
+          <v-btn @click="clickFaq" block large color="#1EFF21"
             >Acceso a FAQ</v-btn
           >
         </v-card>
       </v-flex>
       <v-flex xs12 sm6 md4>
         <v-card color="#6ADD17">
-          <v-btn @click="clickMV" block large color="#6ADD17"
+          <v-btn @click="clickMV" block large color="#1EFF21"
             >Acceso a las MÁQUINAS VIRTUALES</v-btn
           >
         </v-card>
@@ -96,15 +111,13 @@
     </v-layout>
     <br />
 
-    <v-layout row wrap align-center>
-      <v-flex xs1 sm1 md1> </v-flex>
-      <v-flex xs5 sm5 md5>
-        <v-card class color="#292E33" dark width="500">
+    <v-row justify="center" class="mt-0">
+      <v-card class color="#292E33" dark width="500">
           <v-card-text>
             <v-sheet color="rgba(0, 0, 0, .12)">
               <v-sparkline
                 :value="value"
-                color="#6ADD17"
+                color="#1EFF21"
                 height="100"
                 padding="10"
                 stroke-linecap="round"
@@ -124,20 +137,18 @@
           <v-divider></v-divider>
 
           <v-card-actions class="justify-center">
-            <v-btn @click="clickKernels" color="#6ADD17" block text>
+            <v-btn @click="clickKernels" color="#1EFF21" block text>
               Ir a Kernels
             </v-btn>
           </v-card-actions>
         </v-card>
-      </v-flex>
 
-      <v-flex xs5 sm5 md5>
-        <v-card class color="#292E33" dark width="500">
+        <v-card class="ml-2" color="#292E33" dark width="500">
           <v-card-text>
             <v-sheet color="rgba(0, 0, 0, .12)">
               <v-sparkline
                 :value="value2"
-                color="#6ADD17"
+                color="#1EFF21"
                 height="100"
                 padding="10"
                 stroke-linecap="round"
@@ -158,20 +169,15 @@
           <v-divider></v-divider>
 
           <v-card-actions class="justify-center">
-            <v-btn @click="clickRegister" color="#6ADD17" block text>
+            <v-btn @click="clickRegister" color="#1EFF21" block text>
               Ir a Registro
             </v-btn>
           </v-card-actions>
         </v-card>
-      </v-flex>
-      <v-flex xs1 sm1 md1> </v-flex>
-    </v-layout>
 
-    <br />
+    </v-row>
 
-    <br />
-
-    <v-card class="elevation-16 mx-auto" width="300" color="#292E33" dark>
+    <v-card class="elevation-16 mx-auto mt-15" width="300" color="#292E33" dark>
       <v-card-title class="headline" primary-title
         >Valore la aplicación</v-card-title
       >
@@ -181,7 +187,7 @@
         <div class="text-center mt-12">
           <v-rating
             v-model="rating"
-            color="yellow darken-3"
+            color="#1EFF21"
             background-color="grey darken-1"
             empty-icon="$ratingFull"
             half-increments
@@ -189,8 +195,11 @@
         </div>
       </v-card-text>
     </v-card>
+    <br>
+    <br>
+</v-card>
     <br />
-    <v-footer class="warning" padless>
+    <v-footer class="success mt-10" padless>
       <v-row justify="center" no-gutters>
         <br />
         <v-btn color="white" @click="clickMain" text rounded class="my-2"
@@ -212,7 +221,7 @@
         <v-btn color="white" @click="clickKernels" text rounded class="my-2"
           >Kernels</v-btn
         >
-        <v-col class="warning py-4 text-center white--text" cols="12">
+        <v-col class="success py-4 text-center white--text" cols="12">
           {{ new Date().getFullYear() }} —
           <strong>Pánico Del Kernel</strong>
         </v-col>
@@ -234,7 +243,40 @@
   </v-container>
 </template>
 
+<style>
 
+  .myfontGrey{
+
+    color: #78838a;
+    font-family: 'Ubuntu Mono', monospace;
+
+  }
+
+  .myfontRed{
+
+    color: #f00a0a;
+    font-family: 'Ubuntu Mono', monospace;
+
+  }
+
+  .myfontWhite{
+
+    color: #ffffff;
+    font-family: 'Ubuntu Mono', monospace;
+
+  }
+
+  .myfontGreen{
+    
+    color: #8AC53E
+
+  }
+
+  .hoverMouse
+  {
+    cursor: pointer
+  }
+</style>
 
 <script>
 export default {

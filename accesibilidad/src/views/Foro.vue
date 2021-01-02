@@ -1,5 +1,5 @@
 <template>
-  <v-container grid-list-md fluid dark class="warning">
+  <v-container grid-list-md fluid dark class="success">
     <v-layout>
       <v-app-bar app clipped-left color="#191C1F" dark>
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
@@ -129,8 +129,12 @@
       <h1 class="mr-11"></h1>
       <h1 class="mr-7"></h1>
       <v-flex xs6 sm6 md7 child-flex>
-        <v-card class="success md-left scroll" dark outlined>
-          <v-list two-line>
+
+        <v-card class="md-left scroll" dark
+        color="#232E33"
+        >
+          <v-list two-line
+          >
             <v-list-item v-for="item in brawlersHilos" :key="item.title">
               <v-subheader v-if="item.header" :key="item.header"></v-subheader>
               <v-divider
@@ -224,8 +228,8 @@
     <br />
 
     <v-progress-linear
-      background-color="#6ADD17"
-      color="#8AC53E"
+      background-color="#1EFF21"
+      color="#1EFF21"
       value="15"
       md3
     ></v-progress-linear>

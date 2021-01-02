@@ -1,5 +1,5 @@
 <template>
-  <v-container class="warning" fluid grid-list-md>
+  <v-container class="success" fluid grid-list-md>
     <v-layout>
       <!--La barra de arriba, donde irá el logo de la página, el buscador y alguna cosa más de adorno   -->
       <v-app-bar
@@ -122,7 +122,7 @@
       <v-col cols="6">
         <v-card
           width="400"
-          class="xs-right ml-10 success"
+          class="xs-right ml-10 warning"
           dark
           elevation="3"
           tile
@@ -134,7 +134,7 @@
                 >Chotachu</v-list-item-title
               >
               <v-list-item-subtitle
-                ><h4 class="green--text">@chota_chuan</h4></v-list-item-subtitle
+                ><h4 class="myfontGreenSmall">@chota_chuan</h4></v-list-item-subtitle
               >
               <v-list-item-subtitle
                 >En este canal tratara de bicicletas y descenso, asi como de
@@ -159,10 +159,10 @@
     <v-layout class="mt-10  ml-14">
       <v-col cols="4"></v-col>
       <v-col class="ml-5" cols="6">
-        <v-btn class="mx-1 black--text" color="#6ADD17" tile
+        <v-btn class="mx-1 black--text" color="#1EFF21" tile
           >Añadir hilo</v-btn
         >
-        <v-btn class="mx-1 black--text" color="#6ADD17" tile
+        <v-btn class="mx-1 black--text" color="#1EFF21" tile
           >Mensajes Directos</v-btn
         >
       </v-col>
@@ -226,8 +226,8 @@
 
     <!--Línea de separación verde-->
     <v-progress-linear
-      background-color="#8AC53E"
-      color="#8AC53E"
+      background-color="#1EFF21"
+      color="#1EFF21"
       value="10"
       class="mt-10"
       md3
@@ -243,7 +243,7 @@
       <h1 class="mr-10"></h1>
       <v-flex xs7 sm7 md7 child-flex>
         
-        <h2 class="green--text" align="center">Hilos Principales</h2>
+        <h2 class="myfontGreen" align="center">Hilos Principales</h2>
         <br/>
 
         <v-window
@@ -252,7 +252,7 @@
           :show-arrows="showArrows"
         >
           <v-window-item v-for="n in length" :key="n">
-            <v-card flat class="success" dark>
+            <v-card flat class="warning" dark>
               <v-card-text>
                 <v-row class="mb-4" align="center">
                   <v-avatar color="black" class="mr-4">
@@ -282,7 +282,7 @@
           :show-arrows="showArrows2"
         >
           <v-window-item v-for="n in length2" :key="n">
-            <v-card flat class="success" dark>
+            <v-card flat class="warning" dark>
               <v-card-text>
                 <v-row class="mb-4" align="center">
                   <v-avatar color="black" class="mr-4">
@@ -312,7 +312,7 @@
           :show-arrows="showArrows2"
         >
           <v-window-item v-for="n in length3" :key="n">
-            <v-card flat class="success" dark>
+            <v-card flat class="warning" dark>
               <v-card-text>
                 <v-row class="mb-4" align="center">
                   <v-avatar color="black" class="mr-4">
@@ -342,7 +342,7 @@
           :show-arrows="showArrows3"
         >
           <v-window-item v-for="n in length4" :key="n">
-            <v-card flat class="success" dark>
+            <v-card flat class="warning" dark>
               <v-card-text>
                 <v-row class="mb-4" align="center">
                   <v-avatar color="black" class="mr-4">
@@ -613,4 +613,19 @@ export default {
 .scroll {
   overflow-y: auto;
 }
+
+.myfontGreen{
+    
+    color: #1EFF21;
+    font-family: 'Ubuntu Mono', monospace;
+
+}
+
+.myfontGreenSmall{
+    
+    color: #1EFF21;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 14px;
+}
+
 </style>
