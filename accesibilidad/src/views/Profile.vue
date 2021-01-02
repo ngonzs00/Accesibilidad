@@ -138,7 +138,6 @@
           </v-list-item>
           <!--Botones de la tarjeta de usuario.-->
           <v-card-actions>
-            <!--<v-btn class="mx-1 black--text" color="#8AC53E">Editar Perfil</v-btn>-->
           </v-card-actions>
         </v-card>
       </v-col>
@@ -150,7 +149,7 @@
       <v-col cols="4"></v-col>
       <v-col class="ml-5" cols="6">
         <v-btn class="mx-1 black--text" color="#8AC53E" tile
-          >Editar Perfil</v-btn
+          >Añadir hilo</v-btn
         >
         <v-btn class="mx-1 black--text" color="#8AC53E" tile
           >Mensajes Directos</v-btn
@@ -182,20 +181,22 @@
                 <v-btn dark color="#8AC53E">Log Out</v-btn>
               </v-col>
               <v-col cols="12" sm="6">
-                <v-autocomplete
+                <v-autocomplete 
                   :items="[
-                    'Skiing',
-                    'Ice hockey',
-                    'Soccer',
-                    'Basketball',
-                    'Hockey',
-                    'Reading',
-                    'Writing',
-                    'Coding',
-                    'Basejump',
+                    'Ciberataques',
+                    'Ciberseguridad',
+                    'IA',
+                    'Protocolos',
+                    'Programación',
+                    'Diseño web',
+                    'Otros',
                   ]"
-                  label="Interests"
+                  label="Intereses"
                   multiple
+                  color="black"
+                  dark
+                  flat
+                  item-color="black"
                 ></v-autocomplete>
               </v-col>
             </v-row>

@@ -11,10 +11,10 @@
         <v-spacer></v-spacer>
         <v-flex xs5 sm5 md5> </v-flex>
         <v-flex xs1 sm1 md1>
-          <v-btn large dark color="#191C1F" @click="clickLogin"> Login </v-btn>
+          <v-btn large dark color="#191C1F" @click="clickLogin" tile elevation="0"> Login </v-btn>
         </v-flex>
         <v-flex xs1 sm1 md1>
-          <v-btn large dark color="#191C1F" @click="clickRegister">
+          <v-btn large dark color="#191C1F" @click="clickRegister" tile elevation="0">
             Register
           </v-btn>
         </v-flex>
