@@ -18,7 +18,7 @@
       <v-row class="mt-12"></v-row>
       <v-row align="center" >
           <v-avatar rounded size="200" class="ml-3">
-            <img src="../assets/boxDef.png" absolute alt="">
+            <img src="../assets/box2.png" absolute alt="">
           </v-avatar>
           <v-col class="mr-10">
           <h1 class="mt-10 ml-5 myfontGrey">Pánico del Kernel</h1>
@@ -33,7 +33,7 @@
       <br>  
       <br>
       <br>  
-      <v-progress-linear background-color="#8AC53E" color="#8AC53E" value="15" md3></v-progress-linear>
+      <v-progress-linear background-color="#1EFF21" color="#1EFF21" value="15" md3></v-progress-linear>
       <v-text-field
           dark
           prepend-inner-icon="mdi-magnify"
@@ -42,7 +42,7 @@
         />
          <br>
       <br>
-        <v-card color="grey darken-4" dark>
+        <v-card color="#292E33" dark>
           
             <v-card-title primary class="align-center">Maquina Virtual 1 <v-spacer></v-spacer><v-btn class=ml-15 dark color="#6ADD17">Download</v-btn></v-card-title>
             
@@ -59,7 +59,7 @@
             
             <br>
 
-            <v-card color="grey darken-4" dark>
+            <v-card color="#292E33" dark>
             <v-card-title primary class="align-center">Maquina Virtual 2<v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
             <v-card-text> <h2>SO: Windows  <v-icon large class=ml-2 color="#2882FF">mdi-windows</v-icon></h2>
                             Usuario: mherrg04<br>
@@ -73,7 +73,7 @@
             </v-card>
             
             <br>
-             <v-card color="grey darken-4" dark>
+             <v-card color="#292E33" dark>
             <v-card-title primary class="align-center">Maquina Virtual 3 <v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
             <v-card-text><h2>SO: Macosx  <v-icon large class=ml-2 >mdi-apple</v-icon></h2>
                             Usuario: aabadp02<br>
@@ -90,7 +90,7 @@
     
     <br>
     
-        <v-card color="grey darken-4" dark>
+        <v-card color="#292E33" dark>
             <v-card-title primary class="align-center">Maquina Virtual 4 <v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
             <v-card-text> <h2>SO: Linux  <v-icon large class=ml-2 color="#FFEB00">mdi-linux</v-icon></h2>
                             Usuario: ngonzs00<br>
@@ -102,7 +102,7 @@
             
             </v-card>
             <br>
-            <v-card color="grey darken-4" dark>
+            <v-card color="#292E33" dark>
             <v-card-title primary class="align-center">Maquina Virtual 5<v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
             <v-card-text> <h2>SO: Ubuntu  <v-icon large class=ml-2 color="#ff6303">mdi-ubuntu</v-icon></h2>
                             Usuario: mherrg04<br>
@@ -115,7 +115,7 @@
             
             </v-card>
             <br>
-             <v-card color="grey darken-4" dark>
+             <v-card color="#292E33" dark>
             <v-card-title primary class="align-center">Maquina Virtual 6 <v-spacer></v-spacer><v-btn class= ml-12  dark color="#6ADD17">Download</v-btn></v-card-title>
             <v-card-text> <h2>SO: Ubuntu  <v-icon large class=ml-2 color="#ff6303">mdi-ubuntu</v-icon></h2>
                             Usuario: jcastr05<br>
@@ -209,7 +209,7 @@
   </v-container>
     <!--<h1>Esto es lo que tiene que salir en máquinas virtuales.</h1>-->
     </template>
-    <style>
+  <style>
 
   .myfontGrey{
 
