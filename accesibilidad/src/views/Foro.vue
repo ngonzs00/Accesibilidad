@@ -18,7 +18,7 @@
           class="hidden-sm-and-down"
         />
         <v-spacer />
-        <v-btn class="mx-1" color="#8AC53E" @click="goTo('profile')"
+        <v-btn tile class="mx-1 black--text" color="#6ADD17" @click="goTo('profile')"
           >Volver al perfil</v-btn
         >
       </v-app-bar>
@@ -49,7 +49,7 @@
     <!--Línea de separación verde-->
     <br />
     <v-progress-linear
-      background-color="#8AC53E"
+      background-color="#6ADD17"
       color="#8AC53E"
       value="15"
       md3
@@ -224,7 +224,7 @@
     <br />
 
     <v-progress-linear
-      background-color="#8AC53E"
+      background-color="#6ADD17"
       color="#8AC53E"
       value="15"
       md3
@@ -262,21 +262,21 @@
           <v-card-text>@chemaAlonso</v-card-text>
           <v-divider></v-divider>
           <v-card-text
-            >@ngonzs00 <v-icon color="#8AC53E">mdi-cat</v-icon></v-card-text
+            >@ngonzs00 <v-icon color="#6ADD17">mdi-cat</v-icon></v-card-text
           >
           <v-divider></v-divider>
           <v-card-text
             >@jcastr05
-            <v-icon color="#8AC53E">mdi-biohazard</v-icon></v-card-text
+            <v-icon color="#6ADD17">mdi-biohazard</v-icon></v-card-text
           >
           <v-divider></v-divider>
           <v-card-text
-            >@aabadp02 <v-icon color="#8AC53E">mdi-heart</v-icon></v-card-text
+            >@aabadp02 <v-icon color="#6ADD17">mdi-heart</v-icon></v-card-text
           >
           <v-divider></v-divider>
           <v-card-text
             >@mherrg04
-            <v-icon color="#8AC53E">mdi-emoticon-devil</v-icon></v-card-text
+            <v-icon color="#6ADD17">mdi-emoticon-devil</v-icon></v-card-text
           >
         </v-card>
       </v-flex>

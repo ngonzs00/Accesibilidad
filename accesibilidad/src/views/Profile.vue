@@ -64,6 +64,17 @@
         </v-list-item>
 
         <!--Aqui hacemos un for para añadir todos los iconos-->
+        
+        <v-list-item link @click="goTo('foro')">
+          <v-list-item-icon>
+            <v-icon></v-icon>
+            <v-icon>mdi-forum</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title
+            >Acceso al Foro</v-list-item-title
+          >
+        </v-list-item>
+        <v-divider></v-divider>
         <v-list-item
           v-for="item in iconos"
           :key="item.title"
@@ -80,7 +91,7 @@
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-
+        
         <v-divider></v-divider>
         <v-list-item link @click="snackbarDeContacto = true">
           <v-list-item-icon>
@@ -148,10 +159,10 @@
     <v-layout class="mt-10  ml-14">
       <v-col cols="4"></v-col>
       <v-col class="ml-5" cols="6">
-        <v-btn class="mx-1 black--text" color="#8AC53E" tile
+        <v-btn class="mx-1 black--text" color="#6ADD17" tile
           >Añadir hilo</v-btn
         >
-        <v-btn class="mx-1 black--text" color="#8AC53E" tile
+        <v-btn class="mx-1 black--text" color="#6ADD17" tile
           >Mensajes Directos</v-btn
         >
       </v-col>
@@ -178,7 +189,7 @@
               </v-col>
 
               <v-col cols="12" sm="6">
-                <v-btn dark color="#8AC53E">Log Out</v-btn>
+                <v-btn @click="goTo('')" dark color="#8AC53E">Log Out</v-btn>
               </v-col>
               <v-col cols="12" sm="6">
                 <v-autocomplete 
@@ -369,12 +380,12 @@
             <v-subheader class="white--text" color="#202429">
               Comunidades
               <v-spacer></v-spacer>
-              <v-btn icon> <v-icon color="#8AC53E">mdi-plus</v-icon></v-btn>
+              <v-btn icon> <v-icon color="#6ADD17">mdi-plus</v-icon></v-btn>
             </v-subheader>
             <v-list color="#1f2326">
               <v-list-item>
                 <v-list-item-action>
-                  <v-icon color="#8AC53E">mdi-bank</v-icon>
+                  <v-icon color="#6ADD17">mdi-bank</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
                   <v-list-item-title class="myfontGrey"
@@ -385,7 +396,7 @@
 
               <v-list-item>
                 <v-list-item-action>
-                  <v-icon color="#8AC53E">mdi-bank</v-icon>
+                  <v-icon color="#6ADD17">mdi-bank</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
                   <v-list-item-title class="myfontGrey"
@@ -396,7 +407,7 @@
 
               <v-list-item>
                 <v-list-item-action>
-                  <v-icon color="#8AC53E">mdi-bank</v-icon>
+                  <v-icon color="#6ADD17">mdi-bank</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
                   <v-list-item-title class="myfontGrey"
@@ -407,7 +418,7 @@
 
               <v-list-item>
                 <v-list-item-action>
-                  <v-icon color="#8AC53E">mdi-bank</v-icon>
+                  <v-icon color="#6ADD17">mdi-bank</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
                   <v-list-item-title class="myfontGrey"
@@ -421,12 +432,12 @@
               <v-subheader class="white--text">
                 Foros
                 <v-spacer></v-spacer>
-                <v-btn icon><v-icon color="#8AC53E">mdi-plus</v-icon></v-btn>
+                <v-btn icon><v-icon color="#6ADD17">mdi-plus</v-icon></v-btn>
               </v-subheader>
 
               <v-list-item>
                 <v-list-item-action>
-                  <v-icon color="#8AC53E"
+                  <v-icon color="#6ADD17"
                     >mdi-google-circles-communities</v-icon
                   >
                 </v-list-item-action>
@@ -442,7 +453,7 @@
 
               <v-list-item>
                 <v-list-item-action>
-                  <v-icon color="#8AC53E"
+                  <v-icon color="#6ADD17"
                     >mdi-google-circles-communities</v-icon
                   >
                 </v-list-item-action>
@@ -458,7 +469,7 @@
 
               <v-list-item>
                 <v-list-item-action>
-                  <v-icon color="#8AC53E"
+                  <v-icon color="#6ADD17"
                     >mdi-google-circles-communities</v-icon
                   >
                 </v-list-item-action>
@@ -473,7 +484,7 @@
 
               <v-list-item>
                 <v-list-item-action>
-                  <v-icon color="#8AC53E"
+                  <v-icon color="#6ADD17"
                     >mdi-google-circles-communities</v-icon
                   >
                 </v-list-item-action>
@@ -561,7 +572,6 @@ export default {
         ref: "https://www.spotify.com/es/",
       } /*Spotify*/,
 
-      { title: "", icon: "", ref: "" } /*Blank*/,
       { title: "", icon: "", ref: "" } /*Blank*/,
       { title: "", icon: "", ref: "" } /*Blank*/,
       { title: "", icon: "", ref: "" } /*Blank*/,
