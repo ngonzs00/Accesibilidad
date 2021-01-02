@@ -1,6 +1,6 @@
 
 <template>
-  <v-container class="success" fluid grid-list-md style="height: 2000px">
+  <v-container class="success" fluid grid-list-md>
     <v-layout>
       <v-app-bar app color="#191C1F">
         <v-avatar size="40" class="mr-5">

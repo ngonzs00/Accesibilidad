@@ -1,6 +1,6 @@
 
 <template>
-  <v-container dark class="success" fluid grid-list-md style="height:2000px">
+  <v-container dark class="success" fluid grid-list-md>
     <br />
   <v-layout>
                 <v-app-bar app color="#191C1F">
@@ -206,6 +206,7 @@
       </v-col>
     </v-footer>
   </v-container>
+  
 </template>
 
 
