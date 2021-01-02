@@ -81,7 +81,7 @@
                             Descripción: - Herramientas de prueba de penetración estándar de la industria
 - Identificar y explotar diferentes servicios de red
 - Explotación de aplicaciones web a través de las vulnerabilidades más comunes de la actualidad
-- Comprender el directorio activo de Windows y atacar Kerberos
+- Comprender el directorio activo de Macosx y atacar Kerberos
 - Técnicas posteriores a la explotación (con Powerview, Bloodhound y Mimikatz)</v-card-text>
             </v-card-text>
             
