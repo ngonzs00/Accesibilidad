@@ -48,14 +48,14 @@
         </v-list-item>
 
         <v-divider></v-divider>
-        <v-list-item link @click="metodoHome">
+        <v-list-item link @click="goTo('')"> 
           <v-list-item-icon>
             <v-icon></v-icon>
             <v-icon>mdi-home</v-icon>
           </v-list-item-icon>
           <v-list-item-title>Home</v-list-item-title>
         </v-list-item>
-        <v-list-item @click="metodoPerfil">
+        <v-list-item @click="goTo('profile')">
           <v-list-item-icon>
             <v-icon></v-icon>
             <v-icon>mdi-account-circle</v-icon>
@@ -543,7 +543,6 @@ export default {
   data: () => ({
     /*iconos de la navigation bar (la de la izquierda) */
     iconos: [
-      
       {
         title: "Google",
         icon: "mdi-google-glass",
