@@ -180,7 +180,7 @@
             >
           </center>
           <center>
-            <a href="https://www.hackthebox.eu/">
+            <a href="https://www.hackthebox.eu/" target="_blank">
               <img
                 height="200"
                 width="300"
@@ -203,7 +203,7 @@
           <v-card-text>
             <div class="overline mb-4">
               <a
-                href="https://es.wikipedia.org/wiki/Botnet#:~:text=Botnet%20es%20un%20t%C3%A9rmino%20que,servidores%20infectados%20de%20forma%20remota."
+                target="_blank" href="https://es.wikipedia.org/wiki/Botnet#:~:text=Botnet%20es%20un%20t%C3%A9rmino%20que,servidores%20infectados%20de%20forma%20remota."
                 >Leer más</a
               >
             </div>
@@ -248,7 +248,7 @@
             >
           </center>
           <center>
-            <a href="https://tryhackme.com/">
+            <a href="https://tryhackme.com/" target="_blank">
               <img height="200" width="300" src="../assets/try hack me.jpeg" />
             </a>
           </center>
@@ -481,9 +481,9 @@ export default {
 
       {
         avatar: "../assets/profile.jpeg",
-        title: "what?",
+        title: "Autorization problems",
         subtitle:
-          "<span class='font-weight-bold'>Echenique</span> &mdash; in a perfect world, men like me would not exist.....",
+          "<span class='font-weight-bold'>sapp03__</span> &mdash; not working. yes.",
         date: "20/12/2018",
       },
     ],
