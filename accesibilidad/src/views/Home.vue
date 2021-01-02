@@ -75,7 +75,7 @@
       <v-flex xs12 sm6 md4>
         <v-card color="#6ADD17">
           <v-btn @click="clickKernels" block large color="#6ADD17"
-            >Acceso l KERNELS</v-btn
+            >Acceso a KERNELS</v-btn
           >
         </v-card>
       </v-flex>
@@ -207,10 +207,10 @@
           >FAQ</v-btn
         >
         <v-btn color="white" @click="clickMV" text rounded class="my-2"
-          >Ayuda</v-btn
+          >Máquinas virtuales</v-btn
         >
         <v-btn color="white" @click="clickKernels" text rounded class="my-2"
-          >Desarrollo</v-btn
+          >Kernels</v-btn
         >
         <v-col class="warning py-4 text-center white--text" cols="12">
           {{ new Date().getFullYear() }} —
@@ -219,7 +219,7 @@
       </v-row>
       <v-col class="text-center" cols="12">
         <h1 class="overline pt-0 white--text">
-          Copyright © 2020 DECLIVIA A.A.E LTD All rights reserved.
+          Copyright © 2021 DECLIVIA A.A.E LTD All rights reserved.
         </h1>
         <h1 class="overline pt-3 white--text">
           <a target="_blank" color="#8AC53E"></a> icons by

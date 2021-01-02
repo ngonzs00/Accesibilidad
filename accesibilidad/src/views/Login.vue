@@ -82,7 +82,7 @@
           <v-spacer></v-spacer>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="#8AC53E" @click="login">Login</v-btn>
+            <v-btn color="#8AC53E" @click="clickPerfil">Login</v-btn>
           </v-card-actions>
         </v-row>
       </v-form>
@@ -180,6 +180,35 @@
 </style>
 
 <script>
+export default {
+  data: () => ({
+   
+  }),
+  methods: {
+    clickFaq() {
+      this.$router.push("/faq");
+    },
+    clickKernels() {
+      this.$router.push("/kernels");
+    },
+    clickMain() {
+      this.$router.push("/");
+    },
+    clickPerfil() {
+      this.$router.push("/profile");
+    },
+    clickLogin() {
+      this.$router.push("/login");
+    },
+    clickRegister() {
+      this.$router.push("/register");
+    },
+    clickMV() {
+      this.$router.push("/vm");
+    },
+
+  }
+}
 /*
   import axios from "axios";
 

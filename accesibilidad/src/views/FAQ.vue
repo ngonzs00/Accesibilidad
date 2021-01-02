@@ -3,22 +3,23 @@
   <v-container dark class="success" fluid grid-list-md style="height:2000px">
     <br />
   <v-layout>
-            <v-app-bar app color="#191C1F">
+                <v-app-bar app color="#191C1F">
         <v-avatar size="40" class="mr-5">
           <img src="../assets/LogoPanicoKernel.jpeg" absolute alt="" />
         </v-avatar>
 
         <v-toolbar-title class="white--text">Pánico del Kernel</v-toolbar-title>
         <v-spacer></v-spacer>
-        <h1 class="white--text body-1 ma-5 hoverMouse" @click="goTo('')">
-          Página principal
-        </h1>
-        <h1 class="white--text body-1 ma-5 hoverMouse" @click="goTo('merch')">
-          Merchandising
-        </h1>
-        <h1 class="white--text body-1 ma-5 hoverMouse" @click="goTo('faq')">
-          About us
-        </h1>
+        <v-flex xs5 sm5 md5> </v-flex>
+        <v-flex xs1 sm1 md1>
+          <v-btn large dark color="#191C1F" @click="clickLogin"> Login </v-btn>
+        </v-flex>
+        <v-flex xs1 sm1 md1>
+          <v-btn large dark color="#191C1F" @click="clickLogin">
+            Register
+          </v-btn>
+        </v-flex>
+        <v-flex xs1 sm1 md1> </v-flex>
       </v-app-bar>
     </v-layout>
     <v-flex xs12 sm12 md12>
@@ -94,7 +95,7 @@
         <v-expansion-panel-content
           dark
           color="#292E33"
-        >No, la máquina virtual que sea necesaria dentro de los kernels elegirá la máquina virtual de forma automática</v-expansion-panel-content>
+        >No, la máquina virtual que sea necesaria dentro de los kernels será escogida de forma automática</v-expansion-panel-content>
       </v-expansion-panel>
 
         <v-expansion-panel dark color="#292E33">
@@ -167,15 +168,25 @@
     <v-footer class="warning" padless>
       <v-row justify="center" no-gutters>
         <br />
-        <v-btn color="white" @click="clickMain" text rounded class="my-2">Página principal</v-btn>
-        <v-btn color="white" text rounded class="my-2" @click="snackbar = true">Contacto</v-btn>
+        <v-btn color="white" @click="clickMain" text rounded class="my-2"
+          >Página principal</v-btn
+        >
+        <v-btn color="white" text rounded class="my-2" @click="snackbar = true"
+          >Contacto</v-btn
+        >
         <v-snackbar color="blue-grey darken-3" v-model="snackbar">
           {{ email }}
           <v-btn dark color="#33CC00" @click="snackbar = false">Cerrar</v-btn>
         </v-snackbar>
-        <v-btn color="white" @click="clickFaq" text rounded class="my-2">FAQ</v-btn>
-        <v-btn color="white" @click="clickAyuda" text rounded class="my-2">Ayuda</v-btn>
-        <v-btn color="white" @click="clickDesarrollo" text rounded class="my-2">Desarrollo</v-btn>
+        <v-btn color="white" @click="clickFaq" text rounded class="my-2"
+          >FAQ</v-btn
+        >
+        <v-btn color="white" @click="clickMV" text rounded class="my-2"
+          >Máquinas virtuales</v-btn
+        >
+        <v-btn color="white" @click="clickKernels" text rounded class="my-2"
+          >Kernels</v-btn
+        >
         <v-col class="warning py-4 text-center white--text" cols="12">
           {{ new Date().getFullYear() }} —
           <strong>Pánico Del Kernel</strong>
@@ -184,7 +195,7 @@
         <v-col class="text-center" cols="12">
         <h1
           class="overline pt-0 white--text"
-        >Copyright © 2020 DECLIVIA A.A.E LTD All rights reserved.</h1>
+        >Copyright © 2021 DECLIVIA A.A.E LTD All rights reserved.</h1>
         <h1 class="overline pt-3 white--text">
           <a target="_blank" color="#8AC53E"></a> icons by
           <a
@@ -249,31 +260,30 @@ export default {
     ],
     value: [500, 1000, 2500, 5000, 10000, 20000, 30000],
     rating: 5,
-    links: ["Home", "About Us", "Team", "Services", "Blog", "Contact Us"]
   }),
   methods: {
-      /*
-     clickFaq() {
+    clickFaq() {
       this.$router.push("/faq");
     },
-    clickDesarrollo() {
-      this.$router.push("/developers");
+    clickKernels() {
+      this.$router.push("/kernels");
     },
     clickMain() {
-      this.$router.push("/about");
+      this.$router.push("/");
     },
     clickPerfil() {
       this.$router.push("/profile");
-    },
-    clickAyuda() {
-      this.$router.push("/help");
     },
     clickLogin() {
       this.$router.push("/login");
     },
     clickRegister() {
       this.$router.push("/register");
-    }*/
+    },
+    clickMV() {
+      this.$router.push("/vm");
+    },
+
   }
 }
 </script>
