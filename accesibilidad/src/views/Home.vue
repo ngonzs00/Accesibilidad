@@ -58,6 +58,13 @@ color="#1F2326"
               src="../assets/terminal-green-icon.png"
             ></v-img>
           </center>
+          <v-divider class="mt-5"></v-divider>
+
+          <v-card-actions class="justify-center">
+            <v-btn @click="clickKernels" color="#1EFF21" block text>
+              Acceso a Kernels
+            </v-btn>
+          </v-card-actions>
         </v-card>
       </v-flex>
       <v-flex xs12 sm6 md4 child-flex>
@@ -71,6 +78,13 @@ color="#1F2326"
               src="../assets/kisspng-computer-icons-question-mark-bottom-slowly-rising-bubbles-5ae7043d041543.3058040115250893410167.png"
             ></v-img>
           </center>
+          <v-divider class="mt-5"></v-divider>
+
+          <v-card-actions class="justify-center">
+            <v-btn @click="clickFaq" color="#1EFF21" block text>
+              Acceso a FAQ
+            </v-btn>
+          </v-card-actions>
         </v-card>
       </v-flex>
       <v-flex xs12 sm6 md4>
@@ -82,11 +96,18 @@ color="#1F2326"
           <center>
             <v-img height="200" width="200" src="../assets/VB.png"></v-img>
           </center>
+          <v-divider class="mt-5"></v-divider>
+
+          <v-card-actions class="justify-center">
+            <v-btn @click="clickMV" color="#1EFF21" block text>
+              Acceso a máquinas virtuales
+            </v-btn>
+          </v-card-actions>
         </v-card>
       </v-flex>
     </v-layout>
 
-    <v-layout row wrap align-center>
+    <!--<v-layout row wrap align-center>
       <v-flex xs12 sm6 md4>
         <v-card color="#6ADD17">
           <v-btn @click="clickKernels" block large color="#1EFF21"
@@ -110,8 +131,9 @@ color="#1F2326"
       </v-flex>
     </v-layout>
     <br />
+    -->
 
-    <v-row justify="center" class="mt-0">
+    <v-row justify="center" class="mt-5">
       <v-card class color="#292E33" dark width="500">
           <v-card-text>
             <v-sheet color="rgba(0, 0, 0, .12)">
