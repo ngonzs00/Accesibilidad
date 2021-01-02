@@ -1,5 +1,5 @@
 <template>
- <v-container class="success" fluid grid-list-md style="height:2100px">
+ <v-container class="success" fluid grid-list-md >
     <v-layout>
       <v-app-bar app color="#191C1F">
         <v-app-bar-nav-icon class="white--text"></v-app-bar-nav-icon> 
