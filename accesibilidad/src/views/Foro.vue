@@ -469,7 +469,7 @@ export default {
         avatar: "../assets/profile.jpeg",
         title: "Tipos de Ataques Informáticos",
         subtitle:
-          "<span class='font-weight-bold'>Pedro Sánchez</span> &mdash; <p>La aparición de vulnerabilidades en los sistemas y los métodos de encubrimiento de los atacant...</p>",
+          "<span class='font-weight-bold'>Pedro</span> &mdash; <p>La aparición de vulnerabilidades en los sistemas y los métodos de encubrimiento de los atacant...</p>",
         date: "30/02/2020",
       },
       { divider: true, inset: true },

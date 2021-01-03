@@ -113,10 +113,7 @@
 
           <p class="white--text">Algunas empresas podrían pasarse por aquí para cazar talentos</p>
           <p class="white--text">En colaboración con Incibe y Google CTF</p>
-          <p class="white--text hoverMouse">Si te gusta Pánico del Kernel, puede que te guste Declivia</p>
-          <p class="white--text hoverMouse">Lorem ipsum dolor at</p>
           <p class="myfontGreen hoverMouse" @click="goTo('faq')">FAQ</p>
-          <p class="myfontGreen hoverMouse">Miembros</p>
         </v-col>
 
         <v-col align="center">
@@ -138,10 +135,7 @@
 
           <p class="white--text hoverMouse">Atención al cliente todos los días de 9:00 a 20:00 de lunes a sábado</p>
           <p class="white--text hoverMouse ">633457639</p>
-          <p class="white--text hoverMouse ">También fiestas y cumpleaños</p>
-          <p class="white--text hoverMouse ">A quién no le va a gustar</p>
           <p class="myfontGreen hoverMouse">decliviaoficial@gmail.com</p>
-          <p class="white--text">Lo de las fiestas y los cumpleaños era broma</p>
 
         </v-col>
 

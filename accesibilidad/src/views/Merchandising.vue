@@ -114,7 +114,7 @@
           <v-col cols="">
             <v-list>
               <p><strong>Precio: </strong> 2000€</p>
-              <p><strong>Producto: </strong> Camiseta Panico del Chupacabrar</p>
+              <p><strong>Producto: </strong> Camiseta Panico de Declivia</p>
               <p class="text-right">
                 <v-btn
                   class="ml-14"

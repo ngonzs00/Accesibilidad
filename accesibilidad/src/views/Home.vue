@@ -32,11 +32,9 @@
       </v-row>
 
     </v-layout>
-       <v-row class="mt-12"></v-row><v-row class="mt-12"></v-row><v-row class="mt-12"></v-row>
+       <v-row class="mt-12"></v-row><v-row class="mt-12"></v-row>
       <v-row class="mt-12"></v-row>
-<v-card
-color="#1F2326"
->
+<v-card color="#1F2326">
    <!-- <br />
     <v-card color="#292E33" dark>
       <v-card-text>
@@ -48,7 +46,7 @@ color="#1F2326"
 
     <v-layout row wrap align-center>
       <v-flex xs12 sm6 md4>
-        <v-card color="#292E33" dark class="mt-15">
+        <v-card color="#292E33" dark class="mt-6">
           <v-card-title primary class="align-center">KERNELS</v-card-title>
           <v-card-text>{{ kernels }}</v-card-text>
           <center>
@@ -68,7 +66,7 @@ color="#1F2326"
         </v-card>
       </v-flex>
       <v-flex xs12 sm6 md4 child-flex>
-        <v-card color="#292E33" dark class="mt-15">
+        <v-card color="#292E33" dark class="mt-6">
           <v-card-title primary class="align-center">FAQ</v-card-title>
           <v-card-text>{{ faq }}</v-card-text>
           <center>
@@ -88,7 +86,7 @@ color="#1F2326"
         </v-card>
       </v-flex>
       <v-flex xs12 sm6 md4>
-        <v-card color="#292E33" dark class="mt-15">
+        <v-card color="#292E33" dark class="mt-6">
           <v-card-title primary class="align-center"
             >MÁQUINAS VIRTUALES</v-card-title
           >

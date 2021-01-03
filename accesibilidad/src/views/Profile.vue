@@ -131,14 +131,13 @@
             <v-list-item-content>
               <div class="overline mb-4">USUARIO</div>
               <v-list-item-title class="headline mb-1 ml-14"
-                >Chotachu</v-list-item-title
+                >Username</v-list-item-title
               >
               <v-list-item-subtitle
-                ><h4 class="myfontGreenSmall">@chota_chuan</h4></v-list-item-subtitle
+                ><h4 class="myfontGreenSmall">@user_name</h4></v-list-item-subtitle
               >
               <v-list-item-subtitle
-                >En este canal tratara de bicicletas y descenso, asi como de
-                bicicletas y descenso</v-list-item-subtitle
+                >Usuario experimentado en hacking ético (y no tan ético...)</v-list-item-subtitle
               >
             </v-list-item-content>
             <v-list-item-avatar width="70" height="130">
@@ -258,7 +257,7 @@
                   <v-avatar color="black" class="mr-4">
                     <v-icon color="#8AC53E">mdi-cube-outline</v-icon></v-avatar
                   >
-                  <strong class="title">Hilo {{ n }}</strong>
+                  <strong class="title">Tema: TCP</strong>
                   <v-spacer></v-spacer>
                 </v-row>
                 <h3>TCP {{ n }}</h3>
@@ -288,7 +287,7 @@
                   <v-avatar color="black" class="mr-4">
                     <v-icon color="#8AC53E">mdi-cube-outline</v-icon></v-avatar
                   >
-                  <strong class="title">Hilo {{ n }}</strong>
+                  <strong class="title">Tema: DDoS</strong>
                   <v-spacer></v-spacer>
                 </v-row>
                 <h3>DDoS {{ n }}</h3>
@@ -318,10 +317,10 @@
                   <v-avatar color="black" class="mr-4">
                     <v-icon color="#8AC53E">mdi-cube-outline</v-icon></v-avatar
                   >
-                  <strong class="title">Hilo {{ n }}</strong>
+                  <strong class="title">Tema: DoS</strong>
                   <v-spacer></v-spacer>
                 </v-row>
-                <h3>DDoS {{ n }}</h3>
+                <h3>DoS {{ n }}</h3>
                 <p>
                   En seguridad informática, un ataque de denegación de servicio,
                   también llamado ataque DoS, es un ataque a un sistema de
@@ -348,7 +347,7 @@
                   <v-avatar color="black" class="mr-4">
                     <v-icon color="#8AC53E">mdi-cube-outline</v-icon></v-avatar
                   >
-                  <strong class="title">Hilo {{ n }}</strong>
+                  <strong class="title">Tema: XSS attack</strong>
                   <v-spacer></v-spacer>
                 </v-row>
                 <h3>XSS attack {{ n }}</h3>
@@ -389,7 +388,7 @@
                 </v-list-item-action>
                 <v-list-item-content>
                   <v-list-item-title class="myfontGrey"
-                    >Grupo de matemáticas</v-list-item-title
+                    >Grupo de criptografía</v-list-item-title
                   >
                 </v-list-item-content>
               </v-list-item>
@@ -400,7 +399,7 @@
                 </v-list-item-action>
                 <v-list-item-content>
                   <v-list-item-title class="myfontGrey"
-                    >Programar en Java</v-list-item-title
+                    >Programar en Python</v-list-item-title
                   >
                 </v-list-item-content>
               </v-list-item>
@@ -411,7 +410,7 @@
                 </v-list-item-action>
                 <v-list-item-content>
                   <v-list-item-title class="myfontGrey"
-                    >Aprender lengua sin morir en el intento</v-list-item-title
+                    >Aprender Ensamblador sin morir</v-list-item-title
                   >
                 </v-list-item-content>
               </v-list-item>
@@ -443,8 +442,7 @@
                 </v-list-item-action>
                 <v-list-item-content>
                   <v-list-item-title class="myfontGrey"
-                    >¿Cómo se halla la raíz cúbica de mi
-                    gato?</v-list-item-title
+                    >¿Cómo se halla la IP pública de un ordenador?</v-list-item-title
                   >
                 </v-list-item-content>
               </v-list-item>
@@ -475,7 +473,7 @@
                 </v-list-item-action>
                 <v-list-item-content>
                   <v-list-item-title class="myfontGrey"
-                    >Soy un goofy goober</v-list-item-title
+                    >Haciendo el mal</v-list-item-title
                   >
                 </v-list-item-content>
               </v-list-item>
@@ -490,7 +488,7 @@
                 </v-list-item-action>
                 <v-list-item-content>
                   <v-list-item-title class="myfontGrey"
-                    >Tortilla 3 euros, la mejor</v-list-item-title
+                    >OffTopic: ¿Mejor alimentación para hackers?</v-list-item-title
                   >
                 </v-list-item-content>
               </v-list-item>
@@ -500,20 +498,6 @@
       </v-flex>
     </v-layout>
 
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
     <br />
     <br />
     <br />
