@@ -41,7 +41,6 @@
         class="mt-12"
         color="#1F2326"
         width="100000"
-        height="1000"
         >  
         <v-col>
           <v-row class="mr-10" justify="center">
@@ -158,7 +157,8 @@
           </v-row>
 
         </v-col>
-            
+        
+        <br><br>
 
         </v-card>
 
