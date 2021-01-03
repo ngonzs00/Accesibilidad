@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="success" style="height:1500px">
+  <v-container fluid class="success">
     <v-layout>
       <v-app-bar app color="#191C1F">
         <v-app-bar-nav-icon class="white--text"></v-app-bar-nav-icon> <!--Le añadimos un icono blanco-->
@@ -104,42 +104,110 @@
 
       <v-row class="mt-12"></v-row><v-row class="mt-12"></v-row>
 
-      <v-row justify="center">
+     <v-row justify="center">
+      <v-col align="center">
+        <h3 class="white--text">MÁS INFORMACIÓN</h3>
 
-        <v-col align="center">
-          <h3 class="white--text">MÁS INFORMACIÓN</h3>
+        <v-row class="mt-7"></v-row>
 
-          <v-row class="mt-7"></v-row>
+        <p class="white--text">
+          Algunas empresas podrían pasarse por aquí para cazar talentos
+        </p>
+        <p class="white--text">
+          Grandes hackers como Julian Assange o Chema Alonso nos avalan
+        </p>
+        <p class="white--text">En colaboración con Incibe y Google CTF</p>
+        <p class="white--text hoverMouse" @click="goTo('faq')">FAQ</p>
+        <p
+            class="myfontGreen hoverMouse"
+            color="#6ADD17"
+            @click="snackbar3 = true"
+          >
+            Configuración de cookies
+          </p>
 
-          <p class="white--text">Algunas empresas podrían pasarse por aquí para cazar talentos</p>
-          <p class="white--text">Grandes hackers como Julian Assange o Chema Alonso nos avalan</p>
-          <p class="white--text">En colaboración con Incibe y Google CTF</p>
-          <p class="myfontGreen hoverMouse" @click="goTo('faq')">FAQ</p>
-        </v-col>
+          <v-snackbar
+            color="blue-grey darken-4
+"
+            v-model="snackbar3"
+            :multi-line="multiLine"
+          >
+            {{ cookies }}
+            <v-btn
+              dark
+              color="#1eff21
+"
+              cookies
+              @click="snackbar3 = false"
+              >Cerrar</v-btn
+            >
+          </v-snackbar>
+      </v-col>
 
-        <v-col align="center">
-          <h3 class="white--text">REDES SOCIALES</h3>
+      <v-col align="center">
+        <h3 class="white--text">REDES SOCIALES</h3>
 
-          <v-row class="mt-7" justify="center">
-          <img src="../assets/Twitter.png" absolute alt="" class="mt-4 mr-6 hoverMouse">
-          <img src="../assets/Instagram.png" absolute alt="" class="mt-4 mr-6 hoverMouse">
-          <img src="../assets/Linkedin.png" absolute alt="" class="mt-4 mr-6 hoverMouse">
-          <img src="../assets/Facebook.png" absolute alt="" class="mt-4 mr-6 hoverMouse">
-          </v-row>
+        <v-row class="mt-2" justify="center">
+          <img
+            src="../assets/Twitter.png"
+            absolute
+            alt=""
+            class="mt-4 mr-6 hoverMouse"
+          />
+          <img
+            src="../assets/Instagram.png"
+            absolute
+            alt=""
+            class="mt-4 mr-6 hoverMouse"
+          />
+          <img
+            src="../assets/Linkedin.png"
+            absolute
+            alt=""
+            class="mt-4 mr-6 hoverMouse"
+          />
+          <img
+            src="../assets/Facebook.png"
+            absolute
+            alt=""
+            class="mt-4 mr-6 hoverMouse"
+          />
 
-        </v-col> 
+        </v-row>
+      </v-col>
 
-        <v-col align="center">
-          <h3 class="white--text">CONTACTO</h3>
-          <v-row class="mt-7"></v-row>
-          <p class="white--text hoverMouse">Atención al cliente todos los días de 9:00 a 20:00 de lunes a sábado</p>
-          <p class="white--text hoverMouse">Copyright © 2021 DECLIVIA A.A.E LTD All rights reserved.</p>
-          <p class="white--text hoverMouse ">633457639</p>
-          <p class="myfontGreen hoverMouse">decliviaoficial@gmail.com</p>
+      <v-col align="center">
+        <h3 class="white--text">CONTACTO</h3>
+        <v-row class="mt-7"></v-row>
+        <p class="white--text hoverMouse">
+          Atención al cliente todos los días de 9:00 a 20:00 de lunes a sábado
+        </p>
+        <p class="white--text hoverMouse">
+          Copyright © 2021 DECLIVIA A.A.E LTD All rights reserved.
+        </p>
+        <p class="white--text hoverMouse">633457639</p>
+        <p class="white--text hoverMouse">decliviaoficial@gmail.com</p>
+          <div class="text-center">
 
-        </v-col>
+            <p class="myfontGreen hoverMouse" color="#6ADD17" @click="snackbar2 = true"
+              >Configuración de privacidad</p
+            >
 
-      </v-row>
+            <v-snackbar
+              color="blue-grey darken-4"
+              v-model="snackbar2"
+              :multi-line="multiLine"
+            >
+              {{ privacidad }}
+              <v-btn
+                color="#1eff21"
+                @click="snackbar2 = false"
+                >Cerrar</v-btn
+              >
+            </v-snackbar>
+          </div>
+      </v-col>
+    </v-row>
 
 
   </v-container>
@@ -184,6 +252,12 @@
 <script>
 export default {
   data: () => ({
+     cookies:
+      "Utilizamos cookies para garantizarle la mejor experiencia en nuestro sitio web. ",
+    privacidad:
+      "No se difundirán en ningún caso los datos que obtengamos de su conexión. ",
+    snackbar2: false,
+    snackbar3: false,
    
   }),
   methods: {
