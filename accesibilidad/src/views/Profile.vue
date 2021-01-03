@@ -158,7 +158,7 @@
     <v-layout class="mt-10  ml-14">
       <v-col cols="4"></v-col>
       <v-col class="ml-5" cols="6">
-        <v-btn class="mx-1 black--text" color="#1EFF21" tile
+        <v-btn class="mx-1 black--text" color="#1EFF21" tile @click="dialogAñadir = true"
           >Añadir hilo</v-btn
         >
         <v-btn class="mx-1 black--text" color="#1EFF21" tile
@@ -167,6 +167,35 @@
       </v-col>
       <v-col cols="3"></v-col>
     </v-layout>
+
+
+    <!--Pantalla de configuración-->
+    <v-dialog v-model="dialogAñadir" persistent max-width="500px" dark>
+      <v-card>
+        <v-card-title>
+          <span class="headline">Nuevo Hilo</span>
+        </v-card-title>
+        <v-card-text>
+          <v-container>
+            <v-row>
+              <v-col cols="12" sm="6" md="4">
+                <v-text-field label="Título" required></v-text-field>
+              </v-col>
+              <v-col cols="12" sm="6" ></v-col>
+              <v-col cols="12"  >
+                <v-text-field label="Cuerpo" required></v-text-field>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="#1EFF21" text @click="dialogAñadir = false">Cerrar</v-btn>
+          <v-btn color="#1EFF21" text @click="dialogAñadir = false">Guardar</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
 
     <!--Pantalla de configuración-->
     <v-dialog v-model="dialog" persistent max-width="600px" dark>
@@ -188,7 +217,7 @@
               </v-col>
 
               <v-col cols="12" sm="6">
-                <v-btn @click="goTo('')" dark color="#8AC53E">Log Out</v-btn>
+                <v-btn @click="goTo('')" dark color="#1EFF21" class="black--text">Log Out</v-btn>
               </v-col>
               <v-col cols="12" sm="6">
                 <v-autocomplete 
@@ -217,8 +246,8 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="#8AC53E" text @click="dialog = false">Close</v-btn>
-          <v-btn color="#8AC53E" text @click="dialog = false">Save</v-btn>
+          <v-btn color="#1EFF21" text @click="dialog = false">Cerrar</v-btn>
+          <v-btn color="#1EFF21" text @click="dialog = false">Guardar</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -488,7 +517,7 @@
                 </v-list-item-action>
                 <v-list-item-content>
                   <v-list-item-title class="myfontGrey"
-                    >OffTopic: ¿Mejor alimentación para hackers?</v-list-item-title
+                    >OffTopic: ¿Mejor PC para hackers?</v-list-item-title
                   >
                 </v-list-item-content>
               </v-list-item>
@@ -517,7 +546,7 @@
     >
       <v-col class="text-center" cols="12">
         <h1 class="overline pt-0 white--text">
-          Copyright © 2020 DECLIVIA A.A.E LTD All rights reserved.
+          Copyright © 2021 DECLIVIA A.A.E LTD All rights reserved.
         </h1>
         <h1 class="overline pt-3 white--text">
           <a target="_blank" color="#8AC53E"></a> icons by
@@ -568,6 +597,7 @@ export default {
     /*Para lo del counter*/
     messages: 0,
     dialog: false,
+    dialogAñadir: false,
     length: 3,
     length2: 6,
     length3: 2,
@@ -582,7 +612,7 @@ export default {
     snackbarDeContacto: false,
     timeoutDeContacto: 2000,
     text:
-      "Para contactar con los creadores utilizar el siguiente correo electrónico: panicodelkernel@gmail.com",
+      "Para contactar con los creadores utilizar el siguiente correo electrónico: decliviaoficial@gmail.com",
     sticky: true,
   }),
   methods: {
