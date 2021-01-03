@@ -191,7 +191,7 @@
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn color="#1EFF21" text @click="dialogAñadir = false">Cerrar</v-btn>
-          <v-btn color="#1EFF21" text @click="dialogAñadir = false">Guardar</v-btn>
+          <v-btn color="#1EFF21" text @click="dialogAñadir = false">Publicar</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
