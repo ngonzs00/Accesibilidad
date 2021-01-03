@@ -107,6 +107,7 @@
           <v-row class="mt-7"></v-row>
 
           <p class="white--text">Algunas empresas podrían pasarse por aquí para cazar talentos</p>
+          <p class="white--text">Grandes hackers como Julian Assange o Chema Alonso nos avalan</p>
           <p class="white--text">En colaboración con Incibe y Google CTF</p>
           <p class="myfontGreen hoverMouse" @click="goTo('faq')">FAQ</p>
         </v-col>
@@ -125,9 +126,9 @@
 
         <v-col align="center">
           <h3 class="white--text">CONTACTO</h3>
-
           <v-row class="mt-7"></v-row>
           <p class="white--text hoverMouse">Atención al cliente todos los días de 9:00 a 20:00 de lunes a sábado</p>
+          <p class="white--text hoverMouse">Copyright © 2021 DECLIVIA A.A.E LTD All rights reserved.</p>
           <p class="white--text hoverMouse ">633457639</p>
           <p class="myfontGreen hoverMouse">decliviaoficial@gmail.com</p>
 
