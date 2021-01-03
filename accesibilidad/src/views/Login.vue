@@ -82,7 +82,7 @@
           <v-spacer></v-spacer>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="#8AC53E" @click="clickPerfil">Login</v-btn>
+            <v-btn color="#1EFF21" @click="clickPerfil">Login</v-btn>
           </v-card-actions>
         </v-row>
       </v-form>
@@ -169,7 +169,7 @@
 
   .myfontGreen{
     
-    color: #8AC53E
+    color: #1EFF21
 
   }
 
