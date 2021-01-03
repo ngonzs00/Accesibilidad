@@ -18,7 +18,7 @@
           class="hidden-sm-and-down"
         />
         <v-spacer />
-        <v-btn tile class="mx-1 black--text" color="#6ADD17" @click="goTo('profile')"
+        <v-btn tile class="mx-1 black--text" color="#1EFF21" @click="goTo('profile')"
           >Volver al perfil</v-btn
         >
       </v-app-bar>
@@ -263,11 +263,12 @@
             >Perfiles de interés:</v-card-title
           >
           <v-divider></v-divider>
-          <v-card-text>@chemaAlonso</v-card-text>
-          <v-divider></v-divider>
+          
           <v-card-text
             >@ngonzs00 <v-icon color="#6ADD17">mdi-cat</v-icon></v-card-text
           >
+          <v-divider></v-divider>
+          <v-card-text>@chemaAlonso</v-card-text>
           <v-divider></v-divider>
           <v-card-text
             >@jcastr05
@@ -438,9 +439,9 @@ export default {
 
       {
         avatar: "../assets/profile.jpeg",
-        title: "Virtual Box",
+        title: "Inyeccion",
         subtitle:
-          "<span class='font-weight-bold'>jcastr05</span> &mdash; Tengo la cabeza cuadrada.",
+          "<span class='font-weight-bold'>jcastr05</span> &mdash; Inyección de comandos en páginas web.",
         date: "01/01/2021",
       },
       { divider: true, inset: true },
@@ -494,7 +495,7 @@ export default {
     snackbarDeContacto: false,
     timeoutDeContacto: 2000,
     text:
-      "Para contactar con los desarrolladores utilizar el siguiente correo electrónico: panicodelkernel@gmail.com",
+      "Para contactar con los desarrolladores utilizar el siguiente correo electrónico: decliviaoficial@gmail.com",
   }),
   methods: {
     goTo(dir) {

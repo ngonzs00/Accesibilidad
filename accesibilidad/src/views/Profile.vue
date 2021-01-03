@@ -131,7 +131,7 @@
             <v-list-item-content>
               <div class="overline mb-4">USUARIO</div>
               <v-list-item-title class="headline mb-1 ml-14"
-                >Username</v-list-item-title
+                >Elliot Anderson</v-list-item-title
               >
               <v-list-item-subtitle
                 ><h4 class="myfontGreenSmall">@user_name</h4></v-list-item-subtitle
