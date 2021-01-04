@@ -58,6 +58,12 @@ const routes = [
     name: 'VM',
 
     component: () => import(/* webpackChunkName: "about" */ '../views/VM.vue')
+  },
+  {
+    path: '/kernel',
+    name: 'Kernel',
+
+    component: () => import(/* webpackChunkName: "about" */ '../views/Kernel.vue')
   }
 ]
 
