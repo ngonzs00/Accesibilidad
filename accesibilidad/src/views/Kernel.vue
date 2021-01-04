@@ -112,18 +112,53 @@
             </v-card>
         </v-col>
 
-        <v-card
-        class="warning mr-10 mt-10" width=1010 elevation=1>
+
         
-            <v-card
-            outlined
-            height=400
+            <v-card            
             width=1000
             color="#1F2326"
-            class="mt-1 mb-1 ml-1"
+            class="mr-10 mt-10"
             >
+
+            <v-expansion-panels>
+              <v-expansion-panel
+                 style="background:#262B30;color:white"
+              >
+                <v-expansion-panel-header style="background:#262B30;color:white">
+                  <h1 class="myfontWhiteActivity">Actividad 1</h1>
+                </v-expansion-panel-header>
+                <v-expansion-panel-content style="background:#262B30;color:white">
+                <v-col align="center">
+                  <h1 class="myfontWhiteNormal">Antes de comenzar con tu aventura como hacker principiante, vamos a preparar todo lo necesario para que puedas llevar a cabo las actividades de esta máquina.</h1>
+                  
+                  <h1 class="myfontWhiteNormal mt-5">Lo primero que tendrás que hacer es conectarte a nuestra red, mediante un programa de conectividad tal como:</h1> 
+                  <v-row justify="center">
+                    <h1 class="myfontGreenSmall mt-5 mb-5">OpenVPN</h1>
+                  </v-row>
+                  <h1 class="myfontWhiteNormal">Este programa viene preinstalado en Kali Linux y es gratuito</h1>
+                  <h1 class="myfontWhiteNormal mt-5">Para ello puedes ir a tu perfil, entrar en configuración y generar un archivo de configuración personalizado para conectarte a nuestra VPN, en caso de que no lo hayas generado ya.</h1>
+                  <h1 class="myfontWhiteNormal mt-5">Una vez lo tengas descargado, mételo en tu laboratorio de Hacking (tu máquina virtual con Kali Linux, Parrot OS...) y escribe el comando:</h1>
+                  <h1 class="myfontGreenSmall mt-5"> openvpn "nombreArchivo.ovpn"</h1>
+                  <h1 class="myfontWhiteNormal mt-5">No cierres la terminal en la que has escrito este comando y vuelve a entrar en perfil. Podrás comprobar que la conexión ha funcionado cuando el marcador
+                  "conectado" aparezca en verde, justo al lado de la card de tu perfil.</h1>
+                  
+                  <v-row>
+                    <v-text-field
+                      dark
+                      solo-inverted
+                      label="No se necesita ninguna respuesta"
+                      class="sm-and-down mt-10 ml-5"
+                    />
+                    <h1 class="ml-10"></h1>
+                    <v-btn color="#1EFF21" class="mt-11">Responder</v-btn>
+                  </v-row>
+
+                </v-col>
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+            </v-expansion-panels>
             </v-card>
-        </v-card>
+
 
 
         </v-row>
@@ -226,7 +261,14 @@
 
     color: #ffffff;
     font-family: 'Ubuntu Mono', monospace;
+    
+  }
 
+  .myfontWhiteActivity{
+
+    color: #ffffff;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
   }
 
   .myfontGreen{
@@ -242,10 +284,20 @@
     font-family: 'Ubuntu Mono', monospace;
     font-size: 18px;
 
-  }
+  },
+  
 
   .hoverMouse
   {
     cursor: pointer
   }
 </style>
+
+<script>
+export default 
+{
+  data : () =>({
+    
+  }) 
+}
+</script>
