@@ -80,11 +80,12 @@
           <v-row justify="center">
 
             <v-card
-              class="mt-12 mr-10"
+              class="mt-12 mr-10 hoverMouse"
               color="#292E33"
               width="550"
               height="500"
               elevation=10
+              @click="clickKernel"
             >
               <v-layout column align-center>      
                   <img src="../assets/hydra.jpeg" absolute alt="" height=100 class="mt-5">
@@ -105,11 +106,12 @@
             </v-card>
 
             <v-card
-              class="mt-12 mr-10"
+              class="mt-12 mr-10 hoverMouse"
               color="#292E33"
               width="550"
               height="500"
               elevation=10
+              @click="clickKernel"
             >
               <v-layout column align-center>      
                   <img src="../assets/mrRobot.png" absolute alt="" height=100 class="mt-5">
@@ -130,11 +132,12 @@
 
 
              <v-card
-              class="mt-12 mr-10"
+              class="mt-12 mr-10 hoverMouse"
               color="#292E33"
               width="550"
               height="500"
               elevation=10
+              @click="clickKernel"
             >
               <v-layout column align-center>      
                   <img src="../assets/hacker.jpg" absolute alt="" height=100 class="mt-5">
@@ -158,11 +161,51 @@
 
         </v-col>
         
-        <br><br>
+        <br><br><br><br>
 
         </v-card>
 
-
+        <v-footer class="success mt-10" padless>
+      <v-row justify="center" no-gutters>
+        <br />
+        <v-btn color="white" @click="clickMain" text rounded class="my-2"
+          >Página principal</v-btn
+        >
+        <v-btn color="white" text rounded class="my-2" @click="snackbar = true"
+          >Contacto</v-btn
+        >
+        <v-snackbar color="blue-grey darken-3" v-model="snackbar">
+          {{ email }}
+          <v-btn dark color="#33CC00" @click="snackbar = false">Cerrar</v-btn>
+        </v-snackbar>
+        <v-btn color="white" @click="clickFaq" text rounded class="my-2"
+          >FAQ</v-btn
+        >
+        <v-btn color="white" @click="clickMV" text rounded class="my-2"
+          >Máquinas virtuales</v-btn
+        >
+        <v-btn color="white" @click="clickKernels" text rounded class="my-2"
+          >Kernels</v-btn
+        >
+        <v-col class="success py-4 text-center white--text" cols="12">
+          {{ new Date().getFullYear() }} —
+          <strong>Pánico Del Kernel</strong>
+        </v-col>
+      </v-row>
+      <v-col class="text-center" cols="12">
+        <h1 class="overline pt-0 white--text">
+          Copyright © 2021 DECLIVIA A.A.E LTD All rights reserved.
+        </h1>
+        <h1 class="overline pt-3 white--text">
+          <a target="_blank" color="#8AC53E"></a> icons by
+          <a
+            target="_blank"
+            href="http://code.meta-platform.com/assets/mdi/preview.html"
+            >code.meta-platform</a
+          >
+        </h1>
+      </v-col>
+    </v-footer>
 
 
     </v-container> 
@@ -226,3 +269,45 @@
     cursor: pointer
   }
 </style>
+
+<script>
+  export default {
+    data: () => ({
+      cookies:
+        "Utilizamos cookies para garantizarle la mejor experiencia en nuestro sitio web. ",
+      privacidad:
+        "No se difundirán en ningún caso los datos que obtengamos de su conexión. ",
+      snackbar2: false,
+      snackbar3: false,
+    }),
+    methods: {
+      goTo(dir){
+        this.$router.push('/' + dir);
+      },
+      clickFaq(){
+        this.$router.push("/faq");
+      },
+      clickKernel() {
+        this.$router.push("/kernel");
+      },
+      clickKernels() {
+        this.$router.push("/kernels");
+      },
+      clickMain() {
+        this.$router.push("/");
+      },
+      clickPerfil() {
+        this.$router.push("/profile");
+      },
+      clickLogin() {
+        this.$router.push("/login");
+      },
+      clickRegister() {
+        this.$router.push("/register");
+      },
+      clickMV() {
+        this.$router.push("/vm");
+      },
+    },
+};
+</script>
