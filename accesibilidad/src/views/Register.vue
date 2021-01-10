@@ -2,7 +2,6 @@
   <v-container fluid class="success">
     <v-layout>
       <v-app-bar app color="#191C1F">
-        <v-app-bar-nav-icon class="white--text"></v-app-bar-nav-icon> <!--Le añadimos un icono blanco-->
         <v-toolbar-title class="white--text">Pánico del Kernel</v-toolbar-title> <!--Le añadimos el titulo-->
         <v-avatar size="40" class="ml-3">
           <img src="../assets/LogoPanicoKernel.jpeg" absolute alt="">

@@ -26,6 +26,94 @@
     </v-layout>
     <!------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------>
+    
+    <v-row class="ml-5">
+    <v-card 
+    color="#191C1F"
+    width="700"
+    class="ml-15 mt-15 warning">
+
+    <v-col>
+      <v-row justify="center">
+        <v-spacer></v-spacer>
+        <v-btn icon dark @click="dialog = true" class="mr-3 mt-2">
+          <v-icon>mdi-pencil</v-icon>
+          
+      </v-btn>
+      </v-row>
+      <v-row class="ml" align="center">
+        <v-avatar size="170" class=" mt-5 ml-5">
+          <img src="../assets/profile.jpeg" absolute alt="" />
+        </v-avatar>
+        <v-col>
+          <h1 class="myfontWhite mt-15 ml-5">Elliot Alderson</h1>
+          <h1 class="myfontGreenNormal ml-5">@Eliot_Alderson</h1>
+        </v-col>
+      </v-row> 
+      <v-row >
+          <v-row>
+            <img src="../assets/hunt.png" absolute alt="" height=35 class="ml-5 mt-10">
+            <h1 class="myfontWhiteNormal mt-11 ml-2">10</h1>
+            <img src="../assets/hashtag.png" absolute alt="" height=35 class="ml-5 mt-10">
+            <h1 class="myfontWhiteNormal mt-11 ml-2">150</h1>
+            <img src="../assets/chart.png" absolute alt="" height=35 class="ml-5 mt-9">
+            <h1 class="myfontWhiteNormal mt-11 ml-2">78%</h1>
+          </v-row>
+          
+            <h1 class="myfontGreyNormal mt-10 ml-3 mb-3">Usuario experimentado en Hacking ético (y no tan ético...). Grey Especializado en web exploitation mediante XSS y en escalado de privilegios en sistemas Unix. Cuento con 16 años de experiencia.</h1>
+            <!--<h1 class="myfontGreyNormal">(y no tan ético...). Especializado en</h1>
+            <h1 class="myfontGreyNormal">web exploiting mediante XSS y demás</h1>-->
+      </v-row>
+      </v-col>
+
+    </v-card>
+    <v-card
+    color="#191C1F"
+    width="70"
+    height=400
+    class="ml-5 mt-15 warning"
+    >
+    <v-col align="center">
+      <v-icon color="#1EFF21" class="mt-5" large>mdi-account-multiple</v-icon>
+      <v-icon color="#1EFF21" large class="mt-8">mdi-bookmark</v-icon>
+      <v-icon color="#1EFF21" large class="mt-10">mdi-heart</v-icon>
+      <v-icon color="#1EFF21" large class="mt-10">mdi-email</v-icon>
+      <v-icon color="#1EFF21" large class="mt-10">mdi-information</v-icon>
+    </v-col>
+    </v-card>
+    <h1 class="ml-15"></h1>
+    <v-card
+    class="warning mt-15 ml-15"
+    width="800"
+    height=400
+    elevation=0
+    >
+      <v-card
+      color="#191C1F"
+      class="ml-1"
+      width="790"
+      height="410"
+      elevation=0
+      >
+      <v-col align="center">
+        <h1 class="myfontWhite">Actividad Reciente</h1>
+        <v-row justify="center">
+          <h1 class="myfontGreenActividad mt-10">AcelgaLetal</h1><h1 class="myfontGreyNormal mt-10 ml-2">ha añadido un nuevo hilo</h1>
+        </v-row>
+        <v-row justify="center">
+          <h1 class="myfontGreyNormal mt-10">A</h1><h1 class="myfontGreenActividad mt-10 ml-2">ChemaAlonso</h1><h1 class="myfontGreyNormal mt-10 ml-2">le ha gustado un hilo que publicaste</h1>
+        </v-row>
+        <v-row justify="center">
+          <h1 class="myfontGreyNormal mt-10 ml-2">Se han actualizado las políticas de privacidad en el foro e hilos</h1>
+        </v-row>
+        <v-row justify="center">
+          <h1 class="myfontGreenActividad mt-10">Eward_Norton99</h1><h1 class="myfontGreyNormal mt-10 ml-2">acaba de cerrar un hilo que tienes guardado</h1>
+        </v-row>
+        <v-btn @click="goTo('foro')" color="#1EFF21" class="mt-15">Acceso al foro</v-btn>
+      </v-col>
+      </v-card>
+    </v-card>
+    </v-row>
 
     <!--Esto es el toolbar vertical en el que estan las opciones principales.
     Esto iría en el lado izquierdo de la pantalla-->
@@ -37,12 +125,13 @@
       expand-on-hover
       absolute
       color="#262B30"
+      height=1600
     >
       <v-list dense>
         <!--Esto es la foto de perfil del usuario-->
         <v-list-item class="px-2">
           <v-list-item-avatar>
-            <v-img src="../assets/profile.jpeg"></v-img>
+            
           </v-list-item-avatar>
           <v-list-item-title>User~$:</v-list-item-title>
         </v-list-item>
@@ -120,53 +209,13 @@
     <v-layout>
       <v-col cols="4"></v-col>
       <v-col cols="6">
-        <v-card
-          width="400"
-          class="xs-right ml-10 warning"
-          dark
-          elevation="3"
-          tile
-        >
-          <v-list-item three-line>
-            <v-list-item-content>
-              <div class="overline mb-4">USUARIO</div>
-              <v-list-item-title class="headline mb-1 ml-14"
-                >Elliot Anderson</v-list-item-title
-              >
-              <v-list-item-subtitle
-                ><h4 class="myfontGreenSmall">@user_name</h4></v-list-item-subtitle
-              >
-              <v-list-item-subtitle
-                >Usuario experimentado en hacking ético (y no tan ético...)</v-list-item-subtitle
-              >
-            </v-list-item-content>
-            <v-list-item-avatar width="70" height="130">
-              <v-avatar color="teal darken-1" width="70" height="70">
-                <img src="../assets/profile.jpeg" />
-              </v-avatar>
-            </v-list-item-avatar>
-          </v-list-item>
-          <!--Botones de la tarjeta de usuario.-->
-          <v-card-actions>
-          </v-card-actions>
-        </v-card>
+        
       </v-col>
 
       <v-col cols="3"></v-col>
     </v-layout>
 
-    <v-layout class="mt-10  ml-14">
-      <v-col cols="4"></v-col>
-      <v-col class="ml-5" cols="6">
-        <v-btn class="mx-1 black--text" color="#1EFF21" tile @click="dialogAñadir = true"
-          >Añadir hilo</v-btn
-        >
-        <v-btn class="mx-1 black--text" color="#1EFF21" tile
-          >Mensajes Directos</v-btn
-        >
-      </v-col>
-      <v-col cols="3"></v-col>
-    </v-layout>
+    
 
 
     <!--Pantalla de configuración-->
@@ -266,12 +315,28 @@
     <br />
 
     <!--Zona de los hilos del brawler-->
-    <v-layout>
+    <v-layout class="info">
       <h1 class="mr-11"></h1>
       <h1 class="mr-10"></h1>
       <v-flex xs7 sm7 md7 child-flex>
         
-        <h2 class="myfontGreen" align="center">Hilos Principales</h2>
+        <v-card
+          class="success mt-10"
+          height="70"
+        >
+          <v-row justify="center">
+            <h2 class="myfontWhite ml-7 mt-4">Hilos Principales</h2>
+            <v-spacer></v-spacer>
+            <v-spacer></v-spacer>
+            <v-spacer></v-spacer>
+            <v-spacer></v-spacer>
+            <v-spacer></v-spacer>
+            <h1 class="ml-15"></h1><h1 class="ml-15"></h1><h1 class="ml-15"></h1><h1 class="ml-15"></h1><h1 class="ml-15"></h1>
+            <v-row class=hoverMouse @click="dialogAñadir = true">
+              <v-icon color="#1EFF21" large class="mt-4">mdi-plus</v-icon><h1 class="myfontWhiteNormal mt-7 ml-2">Crear Hilo</h1>
+            </v-row>
+          </v-row>
+        </v-card>
         <br/>
 
         <v-window
@@ -392,25 +457,26 @@
             </v-card>
           </v-window-item>
         </v-window>
+        <br><br><br>
       </v-flex>
 
       <h1 class="mr-11"></h1>
       <h1 class="mr-10"></h1>
-      <v-flex xs5 sm5 md3 child-flex>
+      <v-flex xs5 sm5 md3 child-flex class="mt-2 ml-15">
         <br/>
         <v-card flat width="520" outlined height="570" dark>
-          <v-card-title primary class="align-center"
+          <v-card-title primary class="align-center success"
             >Grupos a los que perteneces:</v-card-title
           >
 
           <h1 class="pt-0"></h1>
-          <v-card class="pt-0" color="#1f2326">
+          <v-card class="pt-0 warning" color="#1f2326">
             <v-subheader class="white--text" color="#202429">
               Comunidades
               <v-spacer></v-spacer>
               <v-btn icon> <v-icon color="#6ADD17">mdi-plus</v-icon></v-btn>
             </v-subheader>
-            <v-list color="#1f2326">
+            <v-list class="warning" color="#1f2326">
               <v-list-item>
                 <v-list-item-action>
                   <v-icon color="#6ADD17">mdi-bank</v-icon>
@@ -640,6 +706,39 @@ export default {
     color: #1EFF21;
     font-family: 'Ubuntu Mono', monospace;
     font-size: 14px;
+}
+
+.myfontGreenNormal{
+    
+    color: #1EFF21;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+}
+
+.myfontGreyNormal{
+    
+    color: #78838a;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 18px;
+}
+
+.myfontGreenActividad{
+    color: #1EFF21;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 18px;
+}
+.myfontWhiteNormal{
+    
+    color: #ffffff;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+}
+
+.myfontWhiteSmall{
+    
+    color: #ffffff;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 13px;
 }
 
 </style>

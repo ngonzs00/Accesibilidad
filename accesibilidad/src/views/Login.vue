@@ -3,8 +3,6 @@
   <v-container fluid class="success">
     <v-layout>
       <v-app-bar app color="#191C1F">
-        <v-app-bar-nav-icon class="white--text"></v-app-bar-nav-icon>
-        <!--Le añadimos un icono blanco-->
         <v-toolbar-title class="white--text">Pánico del Kernel</v-toolbar-title>
         <!--Le añadimos el titulo-->
         <v-avatar size="40" class="ml-3">
@@ -46,6 +44,8 @@
 
     <v-card class="mt-12" color="#1F2326" width="100000" height="500">
       <v-row class="mt-12"></v-row>
+      <v-row class="mt-12"></v-row>
+      <v-row class="mt-5"></v-row>
       <v-layout column align-center>
         <v-card class="mt-12" color="#1F2326" width="700" height="300">
           <v-card-text>

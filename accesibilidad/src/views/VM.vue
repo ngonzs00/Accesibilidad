@@ -2,7 +2,6 @@
  <v-container class="success" fluid grid-list-md >
     <v-layout>
       <v-app-bar app color="#191C1F">
-        <v-app-bar-nav-icon class="white--text"></v-app-bar-nav-icon> 
         <v-toolbar-title class="white--text">Pánico del Kernel</v-toolbar-title> 
         <v-avatar size="40" class="ml-3">
           <img src="../assets/LogoPanicoKernel.jpeg" absolute alt="">
@@ -31,60 +30,74 @@
  <v-row class="mt-12"></v-row><v-row class="mt-12"></v-row><v-row class="mt-12"></v-row>
       <v-row class="mt-12"></v-row>
     </v-layout>
+    <v-row justify="center">
     <v-card
     color="#1F2326"
+    width=2300
     >
 
-      <v-progress-linear background-color="#1EFF21" color="#1EFF21" value="15" md3></v-progress-linear>
+      <!--<v-progress-linear background-color="#1EFF21" color="#1EFF21" value="15" md3></v-progress-linear>-->
+      <v-row justify="center" class="mt-15">
+      <v-card
+      color="#1F2326"
+      width=2000
+      elevation=0
+      >
       <v-text-field
           dark
           prepend-inner-icon="mdi-magnify"
           label="Search"
           class="sm-and-down"
         />
+      </v-card>
+      </v-row>
          <br>
       <br>
-        <v-card color="#292E33" dark>
+      <v-row justify="center">
+        <v-card color="#292E33" width=2200 dark class="mt-10">
           
             <v-card-title primary class="align-center">Maquina Virtual 1 <v-spacer></v-spacer><v-btn class=ml-15 dark color="#1EFF21"><h1 class="myfontBlack">DOWNLOAD</h1></v-btn></v-card-title>
             
             <v-card-text> <h2>SO: Ubuntu  <v-icon large class=ml-2 color="#ff6303">mdi-ubuntu</v-icon></h2>
                             Usuario: jcastr05<br>
+                            Tamaño: 4GB<br>
                             Fecha: 10/10/2020<br>
                             Descripción: <b>1.Linux básico: </b>  Familiarícese con la línea de comandos de Linux
-<b>2.Seguridad de las aplicaciones web: </b> Aprenda los conceptos de seguridad de las aplicaciones web a través de OWASP Top 10
-<b>3.Seguridad de la red: </b> Uso de herramientas esenciales como NMAP para enumerar la infraestructura.
-<b>4.Desafíos de secuencias de comandos: </b> Uso de Python y Bash para realizar diferentes tareas.
-<b> 5.Escalada de privilegios </b></v-card-text>
+                            <b>2.Seguridad de las aplicaciones web: </b> Aprenda los conceptos de seguridad de las aplicaciones web a través de OWASP Top 10
+                            <b>3.Seguridad de la red: </b> Uso de herramientas esenciales como NMAP para enumerar la infraestructura.
+                            <b>4.Desafíos de secuencias de comandos: </b> Uso de Python y Bash para realizar diferentes tareas.
+                            <b> 5.Escalada de privilegios </b></v-card-text>
             
             </v-card>
             
             <br>
 
-            <v-card color="#292E33" dark>
+            <v-card color="#292E33" dark width=2200 class="mt-10">
             <v-card-title primary class="align-center">Maquina Virtual 2<v-spacer></v-spacer><v-btn class=ml-15 dark color="#1EFF21"><h1 class="myfontBlack">DOWNLOAD</h1></v-btn></v-card-title>
             <v-card-text> <h2>SO: Windows  <v-icon large class=ml-2 color="#2882FF">mdi-windows</v-icon></h2>
                             Usuario: mherrg04<br>
+                            Tamaño: 6GB<br>
                             Fecha: 5/11/2020<br>
                             Descripción: - Utilizar herramientas estándar de la industria
-- Aprenda escenarios de ataque realistas
-- Entrena en seguridad ofensiva
-- Ejercicios y recursos de apoyo</v-card-text>
+                            - Aprenda escenarios de ataque realistas
+                            - Entrena en seguridad ofensiva
+                            - Ejercicios y recursos de apoyo</v-card-text>
             
                         
             </v-card>
             
             <br>
-             <v-card color="#292E33" dark>
+             <v-card color="#292E33" dark width=2200 class="mt-10">
             <v-card-title primary class="align-center">Maquina Virtual 3 <v-spacer></v-spacer><v-btn class=ml-15 dark color="#1EFF21"><h1 class="myfontBlack">DOWNLOAD</h1></v-btn></v-card-title>
             <v-card-text><h2>SO: Macosx  <v-icon large class=ml-2 >mdi-apple</v-icon></h2>
                             Usuario: aabadp02<br>
+                            Tamaño: 3GB<br>
                             Fecha: 22/12/2020<br>
                             Descripción: - Herramientas de prueba de penetración estándar de la industria
-- Identificar y explotar diferentes servicios de red
-- Explotación de aplicaciones web a través de las vulnerabilidades más comunes de la actualidad
-- Comprender el directorio activo de Macosx y atacar Kerberos
-- Técnicas posteriores a la explotación (con Powerview, Bloodhound y Mimikatz)</v-card-text>
+                            - Identificar y explotar diferentes servicios de red
+                            - Explotación de aplicaciones web a través de las vulnerabilidades más comunes de la actualidad
+                            - Comprender el directorio activo de Macosx y atacar Kerberos
+                            - Técnicas posteriores a la explotación (con Powerview, Bloodhound y Mimikatz)</v-card-text>
             
             
             </v-card>
@@ -92,50 +105,53 @@
     
     <br>
     
-        <v-card color="#292E33" dark>
+        <v-card color="#292E33" dark width=2200 class="mt-10">
             <v-card-title primary class="align-center">Maquina Virtual 4 <v-spacer></v-spacer><v-btn class=ml-15 dark color="#1EFF21"><h1 class="myfontBlack">DOWNLOAD</h1></v-btn></v-card-title>
-            <v-card-text> <h2>SO: Linux  <v-icon large class=ml-2 color="#FFEB00">mdi-linux</v-icon></h2>
+            <v-card-text> <h2>SO: Linux  <img src="../assets/linux.png" absolute alt="" height=50 class="mt-5"><!--<v-icon large class=ml-2 color="#FFEB00">mdi-linux</v-icon>--></h2>
                             Usuario: ngonzs00<br>
+                            Tamaño: 4GB<br>
                             Fecha: 10/12/2020<br>
                             Descripción: - Introducción a Linux
-- Ejecución de comandos y páginas de manual
-- Operadores de archivos básicos</v-card-text>
+                            - Ejecución de comandos y páginas de manual
+                            - Operadores de archivos básicos</v-card-text>
             
             
             </v-card>
             <br>
-            <v-card color="#292E33" dark>
+            <v-card color="#292E33" dark width=2200 class="mt-10">
             <v-card-title primary class="align-center">Maquina Virtual 5<v-spacer></v-spacer><v-btn class=ml-15 dark color="#1EFF21"><h1 class="myfontBlack">DOWNLOAD</h1></v-btn></v-card-title>
             <v-card-text> <h2>SO: Ubuntu  <v-icon large class=ml-2 color="#ff6303">mdi-ubuntu</v-icon></h2>
                             Usuario: mherrg04<br>
+                            Tamaño: 4GB<br>
                             Fecha: 30/8/2020<br>
                             Descripción: - Comprender cómo funcionan las aplicaciones web.
-- Utilizar herramientas estándar de la industria al atacar aplicaciones web.
-- Explicar y explotar las vulnerabilidades web comunes.
-- Aplicar este conocimiento a otros objetivos (ya sea en una entrevista o en una evaluación de seguridad de aplicaciones web profesional)</v-card-text>
-            
+                            - Utilizar herramientas estándar de la industria al atacar aplicaciones web.
+                            - Explicar y explotar las vulnerabilidades web comunes.
+                            - Aplicar este conocimiento a otros objetivos (ya sea en una entrevista o en una evaluación de seguridad de aplicaciones web profesional)</v-card-text>
+                                        
             
             </v-card>
             <br>
-             <v-card color="#292E33" dark>
+             <v-card color="#292E33" dark width=2200 class="mt-10">
             <v-card-title primary class="align-center">Maquina Virtual 6 <v-spacer></v-spacer><v-btn class=ml-15 dark color="#1EFF21"><h1 class="myfontBlack">DOWNLOAD</h1></v-btn></v-card-title>
             <v-card-text> <h2>SO: Ubuntu  <v-icon large class=ml-2 color="#ff6303">mdi-ubuntu</v-icon></h2>
                             Usuario: jcastr05<br>
+                            Tamaño: 4GB<br>
                             Fecha: 20/12/2020<br>
                             Descripción: - Gestión de amenazas y vulnerabilidades
-- Vigilancia y operaciones de seguridad
-- Emulación de amenazas
-- Respuesta a incidentes y análisis forense
-- Análisis de malware e ingeniería inversa</v-card-text>
-             
+                            - Vigilancia y operaciones de seguridad
+                            - Emulación de amenazas
+                            - Respuesta a incidentes y análisis forense
+                            - Análisis de malware e ingeniería inversa</v-card-text>                                  
             </v-card>
+      </v-row>
             
-    
     <br />
       
     <br />
                 <br><br>
     </v-card>
+    </v-row>
     <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
       <v-timeline-item
         v-for="(item, i) in items"
@@ -158,10 +174,12 @@
             </v-btn>
           </v-card-text>
         </v-card>
+        
       </v-timeline-item>
     </v-timeline>
     <v-layout>
     </v-layout>
+    <br><br>
    <v-footer class="success mt" padless>
       <v-row justify="center" no-gutters>
         <br />
